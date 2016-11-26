@@ -2,6 +2,7 @@
 published: true
 layout: simple
 title: Learning Materials
+permalink: /materials/
 ---
 
 All OpenTechSchool Materials are open-source under the

@@ -1,9 +1,11 @@
 ---
 title: Zürich
+active: true
 location: "Zürich, Switzerland"
 tagline: "The real Mountain View"
 mailing_list: team.zurich
 custom_events: "We're also on <a href=\"http://techup.ch/tag/opentechschool\">Techup</a>."
+background: zurich.jpg
 does:
   workshops
   itlabs

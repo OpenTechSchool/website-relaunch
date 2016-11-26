@@ -1,8 +1,10 @@
 ---
 title: Brussels
+active: true
 location: "Brussels, Belgium"
 tagline: "Where knowledge is brewed"
 discourse_group: TeamBrussels
+background: brussels.jpg
 members:
   - roman: Roman Miletitch
   - hugo: Hugo Herter

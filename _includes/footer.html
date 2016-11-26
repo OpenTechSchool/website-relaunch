@@ -4,28 +4,28 @@
         <li class="col-xs-3">
           <h3>Chapters</h3>
           <ul>
-            {% for city in site.cities %}
-              {% include _metadata doc=city %}
-              {% unless city.is_inactive %}
+            {% for chapter in site.chapters %}
+              {% include _metadata doc=chapter %}
+              {% if chapter.active %}
               <li>
-                <a href="{{site.baseurl}}{{key}}" title="{{city.location}}">
-                  {{city.title}}
+                <a href="{{site.baseurl}}{{key}}" title="{{chapter.location}}">
+                  {{chapter.title}}
                 </a>
               </li>
-              {% endunless %}
+              {% endif %}
             {% endfor %}
           </ul>
           Inactive:
           <ul>
-            {% for city in site.cities %}
-              {% include _metadata doc=city %}
-              {% if city.is_inactive %}
+            {% for chapter in site.chapters %}
+              {% include _metadata doc=chapter %}
+              {% unless chapter.is_inactive %}
               <li>
-                <a href="{{site.baseurl}}{{key}}" title="{{city.location}}">
-                  {{city.title}}
+                <a href="{{site.baseurl}}{{key}}" title="{{chapter.location}}">
+                  {{chapter.title}}
                 </a>
               </li>
-              {% endif %}
+              {% endunless %}
             {% endfor %}
             <li>&nbsp;</li>
             <li>

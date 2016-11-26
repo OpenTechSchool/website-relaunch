@@ -1,6 +1,7 @@
 ---
 layout: simple
 title: Imprint
+permalink: /imprint/
 ---
 
 <p>Angaben gemäß § 5 TMG:</p>

@@ -1,10 +1,12 @@
 ---
 title: Hamburg
+active: true
 location: "Hamburg, Germany"
 tagline: "Shipping is our tradition... and so are Franzbrötchen."
 custom_events: ""
 twitter: false
 discourse_group: TeamHamburg
+background: hamburg.jpg
 does:
   workshops
   appsummercamps

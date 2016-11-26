@@ -1,0 +1,33 @@
+.page-chapters {
+
+  li.chapter {
+    padding-bottom: 1rem;
+    a {
+      // make it cover the entire area of the block
+      background-color: $brand-color;
+      color: white;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      &::before {
+        // make it a square
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+        margin-bottom: -2em;
+      }
+      // while positioning on the bottom
+      line-height: 2em;
+      font-size: 1.25em;
+      display: block;
+      text-align: center;
+      color: white;
+
+      &:hover {
+        background-blend-mode: lighten;
+      }
+    }
+  }
+
+}

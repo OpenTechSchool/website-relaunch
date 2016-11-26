@@ -1,10 +1,10 @@
 ---
 title: Nairobi
 location: "Nairobi, Kenya"
-is_inactive: true
 tagline: "When nature and tech had a baby, Nairobi was born"
 twitter: OTSNairobi
 widget_id: 394028430473170944
+background: nairobi.jpg
 members:
   - martha
   - shiko

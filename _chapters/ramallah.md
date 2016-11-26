@@ -1,8 +1,8 @@
 ---
 title: Ramallah
 location: "Ramallah, West-Bank"
-is_inactive: true
 tagline: "freedom is our dream .... learning is our passion"
+background: ramallah.jpg
 members:
   - hosam
   - maymoona

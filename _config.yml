@@ -15,18 +15,20 @@ markdown: kramdown
 
 exclude:
   - vendor
+  - README.md
+  - Gemfile*
+  - .gitignore
 
 collections:
-  cities:
+  chapters:
     output: true
     permalink: /:path/
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
-      type: "cities"
+      type: "chapters"
     values:
-      layout: "city"
+      layout: "chapter"
       does:
         - workshops

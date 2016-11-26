@@ -1,10 +1,12 @@
 ---
 title: Bristol
+active: true
 location: "Bristol, UK"
 tagline: "The start of a great adventure"
 meetup: CodeHub-Bristol
 twitter: CodeHubBs
 widget_id: 487546567449010176
+background: bristol.jpg
 does:
   workshops
   learninggroups

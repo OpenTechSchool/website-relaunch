@@ -10,7 +10,7 @@ social:
     url: "/foundation/donate"
 
 main:
-  - title: "eLarn"
+  - title: "Larn"
     desc: "Want to start learning, click here"
     url: "/learn"
     # nav: learn

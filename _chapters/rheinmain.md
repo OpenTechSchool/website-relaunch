@@ -1,9 +1,9 @@
 ---
 title: RheinMain
 location: "RheinMain, Germany"
-is_inactive: true
 tagline: "RheinMain rocks!"
 twitter: OTS_RM
+background: rheinmain.jpg
 does:
   workshops
   learnersmeetup
