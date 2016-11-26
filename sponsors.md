@@ -29,11 +29,11 @@ sponsors:
 <p>Although OpenTechSchool is run by volunteers we need a few things to do our job that usually involves money or need certain infrastructure. We are thankful to the sponsors below for supporting us in our work.
     </p>
 
-<div class="sponsor_list">
+<div >
 	{% for sponsor_data in page.sponsors %}
 		{% assign sponsor_id = sponsor_data[0] %}
 		{% assign sponsor = sponsor_data[1] %}
-		<div class="{% cycle 'left', 'right' %}">
+		<div >
 		    {% if sponsor.logo %}
 				<a href="{{sponsor.web}}"><img src="{{site.baseurl}}{{sponsor.logo}}" alt="{{sponsor.name}} Logo" ></a>
 		    {% endif %}
@@ -42,7 +42,7 @@ sponsors:
 			<h3 id="{{sponsor_id}}"><a href="{{sponsor.web}}">{{sponsor.name}}</a></h3>
 			    <p>{{sponsor.about}}
 			    	{% if sponsor.blog_post %}
-			    		<span class="blog_post"><a href="{{sponsor.blog_post}}">Learn more about their sponsorship on our blog.</a></span>
+			    		<span ><a href="{{sponsor.blog_post}}">Learn more about their sponsorship on our blog.</a></span>
 			    	{% endif %}
 			    </p>
 			</div>
