@@ -1,6 +1,6 @@
 ---
 published: true
-layout: simple
+layout: page
 title: Learning Materials
 permalink: /materials/
 ---

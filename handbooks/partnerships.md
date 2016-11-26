@@ -1,5 +1,5 @@
 ---
-layout: handbook
+layout: page
 title: Partnership guidelines
 published: true
 ---

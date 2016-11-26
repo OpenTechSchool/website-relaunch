@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: page
 title: Hackership
 image: projects/hackership/background.jpg
 indicator: "hackership"

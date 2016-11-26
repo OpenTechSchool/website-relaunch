@@ -1,5 +1,5 @@
 ---
-layout: handbook
+layout: page
 title: Workshop Example Email - Before Closing
 ---
 

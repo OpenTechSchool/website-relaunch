@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: page
 title: App Summer Camps
 image: projects/app-summer-camps/background.jpg
 indicator: "appsummercamps"

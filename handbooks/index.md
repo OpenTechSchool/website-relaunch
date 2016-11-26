@@ -1,5 +1,5 @@
 ---
-layout: simple
+layout: page
 title: Handbooks
 ---
 

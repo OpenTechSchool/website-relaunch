@@ -1,5 +1,5 @@
 ---
-layout: handbook
+layout: page
 title: Contribute to Learning Materials
 ---
 

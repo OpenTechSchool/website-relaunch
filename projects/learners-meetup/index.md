@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: page
 title: Learners Meetup
 image: projects/learners-meetup/background.jpg
 indicator: "learnersmeetup"

@@ -1,5 +1,5 @@
 ---
-layout: handbook
+layout: page
 title: How to organize a Learners Meetup
 ---
 

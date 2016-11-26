@@ -1,5 +1,5 @@
 ---
-layout: handbook
+layout: page
 title: Contributing to the blog
 ---
 

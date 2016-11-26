@@ -1,5 +1,5 @@
 ---
-layout: handbook
+layout: page
 title: How to start OpenTechSchool in my city?
 ---
 

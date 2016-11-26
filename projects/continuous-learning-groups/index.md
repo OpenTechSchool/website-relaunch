@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: page
 title: Continuous Learning Groups
 image: projects/continuous-learning-groups/background.jpg
 indicator: "learninggroups"

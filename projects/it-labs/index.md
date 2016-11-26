@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: page
 title: IT-Labs
 image: projects/it-labs/background.jpg
 indicator: "itlabs"
