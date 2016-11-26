@@ -15,3 +15,18 @@ markdown: kramdown
 
 exclude:
   - vendor
+
+collections:
+  cities:
+    output: true
+    permalink: /:path/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "cities"
+    values:
+      layout: "city"
+      does:
+        - workshops
