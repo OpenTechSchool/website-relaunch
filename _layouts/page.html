@@ -1,21 +1,23 @@
 ---
 layout: default
 ---
-<div >
-
-  <header >
-    <h1 >{{ page.title }}</h1>
+<div class="layout-page">
+  <header {% if page.background %}style="background-image: url(/assets/statics/backgrounds/{{page.background}})"{% endif %}>
+    <div class="container">
+      <h1>{{ page.title }}</h1>
+    </div>
   </header>
 
-  {% if page.nav %}
-  	<ul>
-  		{% assign nav=site.data.nav[page.nav] %}
-  		{% include _render_nav.html nav=nav%}
-  	</ul>
-  {% endif %}
+  <div class="container">
+    {% if page.nav %}
+      <ul class="subnav row">
+        {% assign nav=site.data.nav[page.nav] %}
+        {% include _render_nav.html nav=nav%}
+      </ul>
+    {% endif %}
 
-  <article >
-    {{ content }}
-  </article>
-
+    <article>
+      {{ content }}
+    </article>
+  </div>
 </div>

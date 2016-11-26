@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body {%if page.permalink %}class="page-{{page.permalink | slugify}}"{% endif %}>
+  <body class="{%if page.permalink %}page-{{page.permalink | slugify}} {% endif %}{% if page.body_tags %}{{page.body_tags}}{% endif %}">
 
     {% include header.html %}
 
