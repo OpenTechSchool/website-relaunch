@@ -42,8 +42,10 @@ $on-laptop:        800px;
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-// @import
-//         "base",
+@import
+        "bourbon/bourbon",
+        "base/base",
+        "vendor/flexboxgrid.css"
 //         "layout",
 //         "syntax-highlighting"
-// ;
+;
