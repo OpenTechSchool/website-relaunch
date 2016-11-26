@@ -1,41 +1,14 @@
-<header>
+<header class="container">
+  <nav class="row middle-xs between-xs">
+    <a class="mainlogo" href="{{site.baseurl}}" >OpenTechSchool</a>
+    <div class="col-xs-6 row end-xs">
+      <ul class="social-links row col-xs-5 between-xs">
+        {% include _render_nav.html nav=site.data.nav.social %}
+      </ul>
 
-  <nav>
-  <div>
-
-    <a href="{{site.baseurl}}" >OpenTechSchool</a>
-    <ul >
-      <li>
-        <a target="_blank" href="http://learn.opentechschool.org">Learn</a>
-      </li>
-      <li>
-        <a href="{{site.baseurl}}about.html">About</a>
-      </li>
-      <li>
-        <a href="{{site.baseurl}}projects/">Projects</a>
-      </li>
-      <li>
-        <a href="http://{{site.blog_domain}}">Blog</a>
-      </li>
-      <li>
-        <ul >
-          <li>
-            <a href="http://discourse.opentechschool.org" title="Our Discuss Forum" >Discourse</a>
-          </li>
-          <li>
-            <a href="https://twitter.com/OpenTechSchool" title="Our Twitter" >Twitter</a>
-          </li>
-          <li>
-            <a href="http://www.facebook.com/OpenTechSchool" title="Our Facebook" >Facebook</a>
-          </li>
-          <li>
-            <a href="https://github.com/OpenTechSchool" title="Our Github" >Github</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-
+      <ul class="main row col-xs-9 between-xs">
+        {% include _render_nav.html nav=site.data.nav.main %}
+      </ul>
+    </div>
+  </nav>
 </header>

@@ -1,3 +1,15 @@
+// brand
+
+$brand-color: #085987;
+$brand-color-lighter: #1F8AB6;
+$brand-color-lightest: #2FB0D5;
+
+$brand-color-black: #222222;
+$brand-color-red: #E04C3E;
+$brand-color-red-strong: #FD4B22; 
+
+
+
 // Breakpoints
 $medium-screen: 600px;
 $large-screen: 900px;
@@ -20,14 +32,14 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #1565c0;
-$dark-gray: #333;
+$blue: $brand-color;
+$dark-gray: $brand-color-black;
 $medium-gray: #999;
 $light-gray: #ddd;
 
 // Font Colors
-$base-font-color: $dark-gray;
-$action-color: $blue;
+$base-font-color: $brand-color-black;
+$action-color: $brand-color-lighter;
 
 // Border
 $base-border-color: $light-gray;

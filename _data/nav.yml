@@ -1,0 +1,45 @@
+social:
+  - title: "Twitter"
+    icon: "twitter"
+    url: "https://twitter.com/OpenTechSchool"
+  - title: "Facebook"
+    icon: "facebook"
+    url: ""
+  - title: "Donate"
+    icon: "heart"
+    url: "/foundation/donate"
+
+main:
+  - title: "Learn"
+    desc: "Want to start learning, click here"
+    url: "/learn"
+    # nav: learn
+  - title: "Contribute"
+    url: "/contribute"
+    # nav: contribute
+  - title: "Community"
+    url: "/community/"
+    nav: "community"
+  - title: "About"
+    url: "/about/"
+    # nav: "about"
+
+
+learn:
+  - title: ""
+community:
+  - title: "Chapters"
+    url:
+  - title: "Projects"
+    url:
+about:
+  - title: "Foundation"
+    url:
+  - title: "History"
+    url:
+  - title: "Our Values"
+    url:
+  - title: "Projects"
+    url:
+  - title: "Press"
+    url:

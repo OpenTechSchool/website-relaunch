@@ -1,0 +1,43 @@
+
+header {
+	padding-top: 0.25em;
+	.mainlogo {
+		background-color: $brand-color;
+		font-size: 1.2em;
+		line-height: 2em;
+		color: white;
+		font-weight: bold;
+		padding: 0 0.5em;
+	}
+
+	.social-links {
+		text-transform: lowercase;
+		font-size: 0.8em;
+		line-height: 1.75em;
+	}
+
+	.main {
+		margin-top: 0.25em;
+		text-transform: uppercase;
+		font-size: 1.25em;
+		line-height: 1.1em;
+	}
+}
+
+
+footer {
+	padding: 2em 0 0.5em 0;
+	font-size: 0.8em;
+	background-color: $brand-color;
+	color: white;
+
+	a, a:hover, a:visited {
+		color: white;
+	}
+
+	.disclaimer {
+		font-size: 0.8em;
+		text-align: center;
+	}
+
+}
