@@ -1,14 +1,24 @@
 ---
 layout: default
 ---
-<div>
 
+<div class="layout-simple">
   <header>
-    <h1>{{ page.title }}</h1>
+    <div class="container">
+      <h1>{{ page.title }}</h1>
+    </div>
   </header>
 
-  <article class="container">
-    {{ content }}
-  </article>
+  <div class="container">
+    {% if page.nav %}
+      <ul class="subnav row">
+        {% assign nav=site.data.nav[page.nav] %}
+        {% include _render_nav.html nav=nav%}
+      </ul>
+    {% endif %}
 
+    <article>
+      {{ content }}
+    </article>
+  </div>
 </div>

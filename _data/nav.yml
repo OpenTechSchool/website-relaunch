@@ -10,7 +10,7 @@ social:
     url: "/foundation/donate"
 
 main:
-  - title: "Learn"
+  - title: "eLarn"
     desc: "Want to start learning, click here"
     url: "/learn"
     # nav: learn
@@ -26,20 +26,29 @@ main:
 
 
 learn:
-  - title: ""
+  - title: "Materials"
+    desc: "Find our Learning Materials"
+    url: "/learning/materials/"
+  - title: "Learner-friendly Projects"
+    url: "/learn/projects"
 community:
   - title: "Chapters"
-    url:
+    url: "/chapters/"
   - title: "Projects"
-    url:
+    url: "/projects"
+  - title: "People"
+    url: "/people"
+  - title: ""
 about:
   - title: "Foundation"
-    url:
+    url: /about/foundation/
   - title: "History"
-    url:
+    url: /about/history/
   - title: "Our Values"
-    url:
+    url: /about/values
   - title: "Projects"
-    url:
+    url: /projects/
   - title: "Press"
-    url:
+    url: /press/
+  - title: "Imprint"
+    url: /imprint/

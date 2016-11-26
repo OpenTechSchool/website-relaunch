@@ -3,15 +3,11 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="page-{{page.permalink | slugify}}">
 
     {% include header.html %}
 
-    <div >
-      <div >
-        {{ content }}
-      </div>
-    </div>
+    {{ content }}
 
     {% include footer.html %}
 
