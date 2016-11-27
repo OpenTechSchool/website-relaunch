@@ -67,9 +67,9 @@ layout: default
       {% if page.discourse_group %}
 
         <h2 >@{{page.discourse_group}}</a>)</h2>
-        <div id="teamList">
-          loading ...
-        </div>
+        
+        {% include components/team.html %}
+        
       {% else %}
         <h2 >Team {{page.title}}</h2>
         <ul >
