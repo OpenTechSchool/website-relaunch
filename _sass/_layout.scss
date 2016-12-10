@@ -26,18 +26,22 @@ header {
 
 
 footer {
-	padding: 2em 0 0.5em 0;
+	padding: 2em 3em 0.5em 3em;
 	font-size: 0.8em;
 	background-color: $brand-color;
 	color: white;
+	text-align: left;
 
 	a, a:hover, a:visited {
 		color: white;
 	}
 
 	.disclaimer {
+		padding: 4em 3em 0.5em 3em;
 		font-size: 0.8em;
 		text-align: center;
+		background-color: $brand-color;
+
 	}
 
 }

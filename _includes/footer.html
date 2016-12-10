@@ -1,36 +1,26 @@
   <footer>
     <div class="container">
       <ul class="row">
+        
         <li class="col-xs-3">
-          <h3>Chapters</h3>
+          <h3>Get involved</h3>
           <ul>
-            {% for chapter in site.chapters %}
-              {% include _metadata doc=chapter %}
-              {% if chapter.active %}
-              <li>
-                <a href="{{site.baseurl}}{{key}}" title="{{chapter.location}}">
-                  {{chapter.title}}
-                </a>
-              </li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-          Inactive:
-          <ul>
-            {% for chapter in site.chapters %}
-              {% include _metadata doc=chapter %}
-              {% unless chapter.is_inactive %}
-              <li>
-                <a href="{{site.baseurl}}{{key}}" title="{{chapter.location}}">
-                  {{chapter.title}}
-                </a>
-              </li>
-              {% endunless %}
-            {% endfor %}
-            <li>&nbsp;</li>
             <li>
-              <a href="{{site.baseurl}}handbooks/city-blueprint.html">Your City?</a>
+              <a href="#">Organize and event</a>
             </li>
+            <li>
+              <a href="#">Host an event</a>
+            </li>
+            <li>
+              <a href="#">Become a sponsor</a>
+            </li>
+             <li>
+              <a href="#">Become a member</a>
+            </li>
+             <li>
+              <a href="#">Start a chapter</a>
+            </li>
+
           </ul>
         </li>
 
@@ -38,80 +28,89 @@
           <h3>Connect</h3>
           <ul>
             <li>
-              <a href="http://blog.opentechschool.org/">Blog</a>
+              <a href="https://twitter.com/OpenTechSchool">Twitter</a>
+            </li>
+
+            <li>
+              <a href="http://localhost:4000/">Facebook</a>
+            </li>
+
+            <li>
+              <a href="https://gitter.im/OpenTechSchool/www.opentechschool.org">Gitter</a>
             </li>
             <li>
-              <a href="http://twitter.com/opentechschool">Twitter</a>
+              <a href="#">Forum</a>
             </li>
-            <li>
-              <a href="https://www.facebook.com/OpenTechSchool">Facebook</a>
-            </li>
-            <li>
+           
+              <li>
               <a href="http://www.meetup.com/find/?allMeetups=true&amp;keywords=opentechschool&amp;radius=Infinity&amp;sort=default">Meetup</a>
             </li>
-            <li>
-              <a href="https://github.com/OpenTechSchool/">GitHub</a>
+             <li>
+              <a href="https://github.com/OpenTechSchool">Github</a>
             </li>
-            <li>
-              <a href="http://discourse.opentechschool.org/">Discourse</a>
+             <li>
+              <a href="https://github.com/OpenTechSchool/">How to contact us</a>
             </li>
-            <li>
-              <a href="https://plus.google.com/b/114834784518588736271/114834784518588736271/posts">Google+</a>
-            </li>
-            <li>
-              <a href="https://groups.google.com/a/opentechschool.org/forum/?fromgroups#!forum/discuss.global">Mailing list</a>
-            </li>
-            <li>
-              <a href="http://www.youtube.com/user/OpenTechSchool">YouTube</a>
-            </li>
+           
 
           </ul>
         </li>
-
-        <li class="col-xs-3">
-          <h3>More content</h3>
+          <li class="col-xs-3">
+          <h3>Our Values</h3>
           <ul>
             <li>
-              <a href="{{site.baseurl}}press.html">Press</a>
+              <a href="#">What drives us</a>
             </li>
             <li>
-              <a href="{{site.baseurl}}imprint.html">Imprint</a>
+              <a href="#">Education by us</a>
             </li>
-            <li>
-              <a href="{{site.baseurl}}contact.html">Contacts</a>
+             <li>
+              <a href="#">Coaches guidline</a>
             </li>
-            <li>
-              <a href="{{site.baseurl}}foundation/">The Foundation</a>
-            </li>
-            <li>
-              <a href="{{site.baseurl}}sponsors.html">Our Sponsors</a>
-            </li>
-            <li>
-              <a href="{{site.baseurl}}material.html">Learning Materials</a>
-            </li>
-            <li>
-              <a href="{{site.baseurl}}code-of-conduct/">Code of Conduct</a>
-            </li>
+             <li>
+              <a href="#">Code of conduct</a>
+            
+
           </ul>
         </li>
 
         <li class="col-xs-3">
-          empty
+          <h3>About us</h3>
+          <ul>
+            <li>
+              <a href="{{site.baseurl}}press.html">Learn more</a>
+            </li>
+            <li>
+              <a href="{{site.baseurl}}imprint.html">FAQ</a>
+            </li>
+            <li>
+              <a href="{{site.baseurl}}contact.html">Press</a>
+            </li>
+            <li>
+              <a href="{{site.baseurl}}foundation/">Imprint</a>
+            </li>
+            <li>
+              <a href="{{site.baseurl}}sponsors.html">Privacy policy</a>
+            </li>
+            
+          </ul>
         </li>
+
+        
       </ul>
 
       <div class="disclaimer">
-        <p>
-          <a title="we are under creative commons"
+       <p>
+          <!-- <a title="we are under creative commons"
             href="http://creativecommons.org/licenses/by/3.0/"><img
-            src="{{site.baseurl}}images/by-sa-cp.png" alt="CC-BY-SA 3.0"></a><br>
+            src="assets/statics/by-sa-cp.png" alt="CC-BY-SA 3.0"></a><br> -->
           <small>
             Except <a href="{{site.baseurl}}imprint.html">where otherwise noted</a>,
             content on this site is licensed under a
             <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">
              Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
           </small>
-        </p>
+        </p> 
 
         <p>
           © 2016 by
