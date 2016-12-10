@@ -1,0 +1,29 @@
+<div id="js-eventslist">
+Loading ...
+</div>
+
+<script id="tmpl-event" type="text/template">
+  <li>
+    <h3>
+      <a href="${event_url}">${name}</a>
+    </h3>
+    <span class="venue">${venue.name}</span>
+  </li>
+</script>
+
+
+<script type="text/javascript">
+onStartUp(function() { fetchAndRender(
+  // '/assets/test_data/components/teamlist.json',
+  'https://api.meetup.com/2/events?key=38406b383fa43605b6b234269316&sign=true&page=200&group_urlname=opentechschool-berlin&_=1481382924069',
+  'js-eventslist',
+  ['tmpl-event'],
+  function(data, eventTemplate) {
+  	  var events = data.results;
+  	        
+      function render(event){
+        return eventTemplate.template(event);
+      }
+      return "<ul>" + events.map(render).join("\n") + "</ul>";
+    })});
+</script>
