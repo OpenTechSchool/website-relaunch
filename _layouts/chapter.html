@@ -17,6 +17,10 @@ layout: default
         {{page.tagline}}
       </h2>
     {% endif %}
+
+      {% if page.meetup_group %}
+        {% include components/member_count_example.html %}
+      {% endif %}
   </div>
   </header>
 

@@ -6,6 +6,7 @@ tagline: "Where everything started... and you can take a ride in a rotating TV t
 twitter: OTS_BLN
 widget_id: 276335676528672768
 discourse_group: TeamBerlin
+meetup_group: "opentechschool-berlin"
 background: berlin.jpg
 does:
   hackership

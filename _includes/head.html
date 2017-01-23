@@ -11,6 +11,7 @@
     <script type="text/javascript">
     (function(){
     	var _queue = [];
+    	window.MEETUPCOM_KEY = '38406b383fa43605b6b234269316';
     	window.onStartUp = function(fn){
     		if (document.readyState === "loading") {
     			_queue.push(fn);
@@ -27,18 +28,13 @@
 		        });
 		    }
 		}
-		window.fetchAndRender = function(
-			sourceUrl,   // link to a json URL we will fetch
-			targetId,  // the target this should be rendered into
-			templates,   // any templateIDs it'd like us to fetch for them
-			fn           // the function to call
-			) {
-			var target = document.getElementById(targetId);
-			return fetch(sourceUrl)
-				.then(function(resp) { return resp.json() })
-				.then(function(data) {
+		function _thenRender(target, templates, fn) {
+			return (function(prms) {
+				return prms.then(function(data) {
 					var args = (templates || []).map(
 						function (tmpl) { return document.getElementById(tmpl).innerHTML});
+					// no function provided? directly render by passing data to first template
+					if (!fn) return args[0].template(data);
 					args.unshift(data);
 					return fn.apply(fn, args);
 				})
@@ -48,6 +44,32 @@
 				.catch(function(error){
 					target.innerHTML = error
 				});
+
+			})
+		}
+		window.fetchAndRender = function(
+			sourceUrl,   // link to a json URL we will fetch
+			targetId,    // the target this should be rendered into
+			templates,   // any templateIDs it'd like us to fetch for them
+			fn           // the function to call
+			) {
+			var target = document.getElementById(targetId);
+			return _thenRender(target, templates, fn)(fetch(sourceUrl)
+				.then(function(resp) { return resp.json() }));
+		}
+		window.fetchJSONPAndRender = function(
+			sourceUrl,   // link to a json URL we will fetch
+			targetId,    // the target this should be rendered into
+			templates,   // any templateIDs it'd like us to fetch for them
+			fn           // the function to call
+			) {
+			var target = document.getElementById(targetId);
+			var prms = new Promise(function (resolve, reject){
+				JSONP(sourceUrl, resolve);
+			});
+			console.log(prms);
+			_thenRender(target, templates, fn)(prms);
+			return prms;
 		}
 	})()
     </script>

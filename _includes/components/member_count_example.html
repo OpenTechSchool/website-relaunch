@@ -1,0 +1,14 @@
+<div id="js-membercount">
+</div>
+
+<script id="tmpl-membercount" type="text/template">
+  ${data.members} Learners
+</script>
+
+
+<script type="text/javascript">
+onStartUp(function() { fetchJSONPAndRender(
+  'https://api.meetup.com/{{page.meetup_group}}?key=' + MEETUPCOM_KEY,
+  'js-membercount',
+  ['tmpl-membercount'])});
+</script>
