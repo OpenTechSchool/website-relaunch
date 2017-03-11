@@ -67,7 +67,10 @@ $base-font-family: $font-stack-esteban;
 $heading-font-family: $font-stack-mountserrat;
 
 // Font Sizes
-$base-font-size: 1em;
+$base-font-size: 1.6rem; //16px
+$p-font-small: 1.2rem;
+$logo-size: 2rem;
+
 
 // Line height
 $base-line-height: 1.5;
@@ -75,7 +78,7 @@ $heading-line-height: 1.2;
 
 // Other Sizes
 $base-border-radius: 3px;
-$base-spacing: $base-line-height * 1em;
+$base-spacing: $base-line-height * 1.6em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
@@ -84,7 +87,7 @@ $base-border-color: $light-gray;
 $base-border: 1px solid $base-border-color;
 
 // Background Colors
-$base-background-color: #fff;
+$base-background-color: $white;
 $secondary-background-color: tint($base-border-color, 75%);
 
 // Forms

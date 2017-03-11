@@ -24,13 +24,13 @@ h6 {
 }
 
 h1 {
-  font-size: 24px;
-  font-size: 2.4rem;
+  font-size: 28px;
+  font-size: 2.8rem;
 }
 
 h2 {
-  font-size: 10px;
-  font-size: 2rem;
+  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 h3 {
@@ -51,6 +51,11 @@ p {
   margin: 0 0 $small-spacing;
 }
 
+.small-p {
+  font-size: $p-font-small;
+}
+
+
 a {
   color: $action-color;
   text-decoration: none;
@@ -70,3 +75,4 @@ hr {
   border-top: 0;
   margin: $base-spacing 0;
 }
+
