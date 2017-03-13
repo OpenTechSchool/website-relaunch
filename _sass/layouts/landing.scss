@@ -42,6 +42,7 @@
 		.intro__boxes {
 			margin-top: 60px;
 			.intro__boxes__box {
+				visibility: hidden;
 				padding: 0 10px;
 	    	display: inline-block;
 	    	color: $brand-color-black;
