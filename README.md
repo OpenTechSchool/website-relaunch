@@ -9,7 +9,9 @@ The source code behind OTS' main web site.
 
 This project is built with the help of
 
- * bootstrap
+ * [Bourbon](http://bourbon.io)
+ * [Bitter](bitters.bourbon.io)
+ * [Flexbox Grid](http://flexboxgrid.com/)
  * jekyll
 
 In order to be able to compile the site on your own computer, you can install
