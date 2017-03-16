@@ -1,36 +1,98 @@
-#{$all-buttons} {
+#{$all-buttons},
+.btn {
   appearance: none;
-  background-color: $action-color;
-  border: 0;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  background-color: $brand-color;
+  color: $white;
   border-radius: $base-border-radius;
-  color: #fff;
+  border: 0;
   cursor: pointer;
-  display: inline-block;
-  font-family: $base-font-family;
+  font-family: $heading-font-family;
   font-size: $base-font-size;
   -webkit-font-smoothing: antialiased;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1;
-  padding: $small-spacing $base-spacing;
+  padding: .9em 2.4em;
   text-align: center;
   text-decoration: none;
-  transition: background-color $base-duration $base-timing;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+  text-transform: uppercase;
+
+  background-color: shade($brand-color, 20%);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color .3s;
+
 
   &:hover,
   &:focus {
-    background-color: shade($action-color, 20%);
-    color: #fff;
+    background-color: shade($brand-color, 40%);
+    color: $white;
   }
 
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 0;
+    padding-top: 0;
+    border-radius: 100%;
+
+    background-color: rgba(236, 240, 241, .3);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  &:active {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+    transition-delay: 0s;
+
+    &:before {
+      width: 120%;
+      padding-top: 120%;
+
+      transition: width .2s ease-out, padding-top .2s ease-out;
+    }
+  }
+
+  // Disable btn
   &:disabled {
     cursor: not-allowed;
     opacity: 0.5;
+    background-color: shade($white, 60%);
 
     &:hover {
-      background-color: $action-color;
+      background-color: shade($white, 60%);
     }
   }
+
+  // On Dark bkg
+  &.btn-reverse {
+    color: $brand-color;
+    background-color: $white;
+
+    &:disabled:hover {
+      background-color: $white;
+    }
+  }
+
+  // small
+  &.btn--small {
+    width: 30%;
+  }
+
+  // centered btn
+  &.btn--center {
+    margin: 0 auto;
+    margin-top: 30px;
+  }
 }
+
