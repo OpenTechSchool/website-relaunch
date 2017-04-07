@@ -32,7 +32,18 @@ header {
 		font-weight: 200;
     font-size: 3rem;
 	}
+
+	&.section-bkg--blue {
+		background-color: $brand-color;
+		color: $white;
+		padding: 70px 0;
+
+		h2 {
+			font-weight: 700;
+		}
+	}
 }
+
 
 footer {
 	padding: 2em 3em 0.5em 3em;
@@ -53,8 +64,6 @@ footer {
 	}
 
 }
-
-
 
 @import
 	"layouts/page.scss",

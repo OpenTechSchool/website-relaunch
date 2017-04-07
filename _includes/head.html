@@ -1,85 +1,86 @@
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}{% if page.tagline %} || {{page.tagline}}{%endif%} || OpenTechSchool.org</title>
-    <meta name="description" content="{{ site.description }}" />
-	  <meta name="author" content="OpenTechSchool">
-	  <meta property="og:title" content="OpenTechSchool" />
-	  <meta property="og:type" content="school" />
-	  <meta property="og:url" content="http://{{ site.url }}" />
-	  <meta property="og:image" content="http://{{ site.url }}/images/ots_logo_fb.png" />
-	  <meta property="og:site_name" content="{{ site.url }}" />
-	  <meta property="og:description" content="{{ site.description }}" />
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}{% if page.tagline %} || {{page.tagline}}{%endif%} || OpenTechSchool.org</title>
+  <meta name="description" content="{{ site.description }}" />
+  <meta name="author" content="OpenTechSchool">
+  <meta property="og:title" content="OpenTechSchool" />
+  <meta property="og:type" content="school" />
+  <meta property="og:url" content="http://{{ site.url }}" />
+  <meta property="og:image" content="http://{{ site.url }}/images/ots_logo_fb.png" />
+  <meta property="og:site_name" content="{{ site.url }}" />
+  <meta property="og:description" content="{{ site.description }}" />
 
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript">
-    (function(){
-    	var _queue = [];
-    	window.MEETUPCOM_KEY = '38406b383fa43605b6b234269316';
-    	window.onStartUp = function(fn){
-    		if (document.readyState === "loading") {
-    			_queue.push(fn);
-    		} else {
-    			// we are past loading, start immediately.
-    			fn();
-    		}
-    	}
-    	document.onreadystatechange = function () {
-		    if (document.readyState === "interactive") {
-		        _queue.forEach(function(fn){
-		        	// execute all queued actions
-		        	fn();
-		        });
-		    }
-		}
-		function _thenRender(target, templates, fn) {
-			return (function(prms) {
-				return prms.then(function(data) {
-					var args = (templates || []).map(
-						function (tmpl) { return document.getElementById(tmpl).innerHTML});
-					// no function provided? directly render by passing data to first template
-					if (!fn) return args[0].template(data);
-					args.unshift(data);
-					return fn.apply(fn, args);
-				})
-				.then(function(rendered) {
-					target.innerHTML = rendered;
-				})
-				.catch(function(error){
-					target.innerHTML = error
-				});
-
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.3/d3.min.js"></script>
+  <script type="text/javascript">
+  (function(){
+  	var _queue = [];
+  	window.MEETUPCOM_KEY = '38406b383fa43605b6b234269316';
+  	window.onStartUp = function(fn){
+  		if (document.readyState === "loading") {
+  			_queue.push(fn);
+  		} else {
+  			// we are past loading, start immediately.
+  			fn();
+  		}
+  	}
+  	document.onreadystatechange = function () {
+	    if (document.readyState === "interactive") {
+	        _queue.forEach(function(fn){
+	        	// execute all queued actions
+	        	fn();
+	        });
+	    }
+	}
+	function _thenRender(target, templates, fn) {
+		return (function(prms) {
+			return prms.then(function(data) {
+				var args = (templates || []).map(
+					function (tmpl) { return document.getElementById(tmpl).innerHTML});
+				// no function provided? directly render by passing data to first template
+				if (!fn) return args[0].template(data);
+				args.unshift(data);
+				return fn.apply(fn, args);
 			})
-		}
-		window.fetchAndRender = function(
-			sourceUrl,   // link to a json URL we will fetch
-			targetId,    // the target this should be rendered into
-			templates,   // any templateIDs it'd like us to fetch for them
-			fn           // the function to call
-			) {
-			var target = document.getElementById(targetId);
-			return _thenRender(target, templates, fn)(fetch(sourceUrl)
-				.then(function(resp) { return resp.json() }));
-		}
-		window.fetchJSONPAndRender = function(
-			sourceUrl,   // link to a json URL we will fetch
-			targetId,    // the target this should be rendered into
-			templates,   // any templateIDs it'd like us to fetch for them
-			fn           // the function to call
-			) {
-			var target = document.getElementById(targetId);
-			var prms = new Promise(function (resolve, reject){
-				JSONP(sourceUrl, resolve);
+			.then(function(rendered) {
+				target.innerHTML = rendered;
+			})
+			.catch(function(error){
+				target.innerHTML = error
 			});
-			console.log(prms);
-			_thenRender(target, templates, fn)(prms);
-			return prms;
-		}
-	})()
-    </script>
+
+		})
+	}
+	window.fetchAndRender = function(
+		sourceUrl,   // link to a json URL we will fetch
+		targetId,    // the target this should be rendered into
+		templates,   // any templateIDs it'd like us to fetch for them
+		fn           // the function to call
+		) {
+		var target = document.getElementById(targetId);
+		return _thenRender(target, templates, fn)(fetch(sourceUrl)
+			.then(function(resp) { return resp.json() }));
+	}
+	window.fetchJSONPAndRender = function(
+		sourceUrl,   // link to a json URL we will fetch
+		targetId,    // the target this should be rendered into
+		templates,   // any templateIDs it'd like us to fetch for them
+		fn           // the function to call
+		) {
+		var target = document.getElementById(targetId);
+		var prms = new Promise(function (resolve, reject){
+			JSONP(sourceUrl, resolve);
+		});
+		console.log(prms);
+		_thenRender(target, templates, fn)(prms);
+		return prms;
+	}
+})()
+  </script>
 </head>

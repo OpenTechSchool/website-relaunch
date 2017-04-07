@@ -1,7 +1,7 @@
 #{$all-buttons},
 .btn {
   appearance: none;
-  display: block;
+  display: inline-block;
   overflow: hidden;
   position: relative;
   background-color: $brand-color;
@@ -86,7 +86,9 @@
 
   // small
   &.btn--small {
-    width: 30%;
+    width: 90%;
+    padding: .9em .4em;
+    font-size: 1.2rem;
   }
 
   // centered btn

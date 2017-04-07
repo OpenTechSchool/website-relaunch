@@ -1,0 +1,20 @@
+#donut {
+  width: 29rem;
+  height: 29rem;
+  margin: 0 auto;
+}
+
+path.color0 {
+  fill: $ots_constrat_pink;
+}
+
+path.color1 {
+  fill: rgba(white, .8);
+}
+
+text {
+	font-size: 3rem;
+  fill: $white;
+  font-family: $heading-font-family;
+  font-weight: 700;
+}
