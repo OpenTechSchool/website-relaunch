@@ -1,8 +1,20 @@
-# [www.opentechschool.org](http://www.opentechschool.org)
-
+# Realunching OpenTechSchool Website 
+On this repository we are working on the version 2 of [OTS Website](http://www.opentechschool.org)
 [![Join the chat at https://gitter.im/OpenTechSchool/www.opentechschool.org](https://badges.gitter.im/OpenTechSchool/www.opentechschool.org.svg)](https://gitter.im/OpenTechSchool/www.opentechschool.org?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 [![Travis Build Status](https://travis-ci.org/OpenTechSchool/www.opentechschool.org.svg "Travis Build Status")](https://travis-ci.org/OpenTechSchool/www.opentechschool.org)
+
+
+# Why a new website?
+Ots community grow a lot since the time we build our current website, we have now new chapters, new formats but in particular we have more users interested in our community. Reason why we need to rethink about our website, starting from the UX and giving some refresh to our UI too.
+In order to build this new website we need the help of all our community so if you are ready to contribute check the links below to know where to start.
+
+# How can i contirbute?
+[Read our contributors guideline]
+[Check our open PR]
+[Read our workflow]
+[Set up the website locally]
+[Got issues? get in touch]
 
 
 The source code behind OTS' main web site.
