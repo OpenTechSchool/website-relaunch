@@ -1,36 +1,37 @@
 
 header {
+	font-family: $heading-font-family;
 	padding-top: 0.25em;
+	margin-top: 10px;
+  padding: 0px 10px;
+
 	.mainlogo {
 		background-color: $brand-color;
-		font-size: 1.2em;
+		font-size: $logo-size;
 		line-height: 2em;
 		color: white;
-		font-weight: bold;
+		font-weight: 400;
 		padding: 0 0.5em;
 	}
 
 	.social-links {
+		font-size: $p-font-small;
 		text-transform: lowercase;
-		font-size: 0.8em;
-		line-height: 1.75em;
 	}
 
 	.main {
 		margin-top: 0.25em;
 		text-transform: uppercase;
-		font-size: 1.25em;
-		line-height: 1.1em;
 	}
 }
 
 
 footer {
 	padding: 2em 3em 0.5em 3em;
-	font-size: 0.8em;
 	background-color: $brand-color;
 	color: white;
 	text-align: left;
+	font-size: $p-font-small;
 
 	a, a:hover, a:visited {
 		color: white;
@@ -38,7 +39,6 @@ footer {
 
 	.disclaimer {
 		padding: 4em 3em 0.5em 3em;
-		font-size: 0.8em;
 		text-align: center;
 		background-color: $brand-color;
 
@@ -48,7 +48,7 @@ footer {
 
 
 
-@import 
+@import
 	"layouts/page.scss",
 	"layouts/landing.scss",
 	"layouts/chapter.scss"
