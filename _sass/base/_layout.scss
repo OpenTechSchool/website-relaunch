@@ -12,3 +12,90 @@ html,
 body {
   height: 100%;
 }
+
+a {
+	cursor: pointer;
+}
+
+
+header {
+	font-family: $heading-font-family;
+	padding-top: 0.25em;
+	margin-top: 10px;
+  padding: 0px 10px;
+
+	.mainlogo {
+		background-color: $brand-color;
+		font-size: $logo-size;
+		line-height: 2em;
+		color: white;
+		font-weight: 400;
+		padding: 0 0.5em;
+	}
+
+	.social-links {
+		font-size: $p-font-small;
+		text-transform: lowercase;
+	}
+
+	.main {
+		margin-top: 0.25em;
+		text-transform: uppercase;
+	}
+}
+
+.section-bkg {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	h2 {
+		font-weight: 200;
+    font-size: 3rem;
+	}
+
+	&.section-bkg--blue {
+		background-color: $brand-color;
+		color: $white;
+		padding: 70px 0;
+
+		h2 {
+			font-weight: 700;
+		}
+	}
+
+	&.section-bkg--pink {
+		background-color: $ots_constrat_pink;
+		color: $white;
+		padding: 70px 0;
+
+		h2 {
+			font-weight: 700;
+		}
+	}
+}
+
+
+footer {
+	padding: 2em 3em 0.5em 3em;
+	background-color: $brand-color;
+	color: white;
+	text-align: left;
+	font-size: $p-font-small;
+
+	a, a:hover, a:visited {
+		color: white;
+	}
+
+	.disclaimer {
+		padding: 4em 3em 0.5em 3em;
+		text-align: center;
+		background-color: $brand-color;
+
+	}
+
+}
+
+@import
+	"../layouts/page.scss",
+	"../layouts/landing.scss",
+	"../layouts/chapter.scss"
+;

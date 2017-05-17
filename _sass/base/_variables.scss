@@ -35,6 +35,8 @@ $ots_text_i_l: #C1D5E1; /* (Inverted) Link color on dark blue backgrounds */
 $ots_red_l: #E04C3E; /* Highlighted, red links, buttons, other highlights */
 $ots_red_h: #FD4B22; /* Red hover states */
 
+$ots_constrat_pink: #FF4081;
+
 
 // brand - use bitters vars name
 $brand-color: $ots_blue;
@@ -51,7 +53,7 @@ $blue: $brand-color;
 $dark-gray: $brand-color-black;
 $medium-gray: #999;
 $light-gray: #ddd;
-$white: #fff;
+$white: #ecf0f1;
 
 // Font Colors
 $base-font-color: $brand-color-black;
@@ -77,7 +79,7 @@ $base-line-height: 1.5;
 $heading-line-height: 1.2;
 
 // Other Sizes
-$base-border-radius: 3px;
+$base-border-radius: 1px;
 $base-spacing: $base-line-height * 1.6em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;

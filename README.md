@@ -1,4 +1,4 @@
-# Realunching OpenTechSchool Website 
+# Realunching OpenTechSchool Website
 On this repository we are working on the version 2.0 of OTS Website
 
 [![Travis Build Status](https://travis-ci.org/OpenTechSchool/www.opentechschool.org.svg "Travis Build Status")](https://travis-ci.org/OpenTechSchool/www.opentechschool.org)
@@ -22,7 +22,7 @@ In order to build this new website we need the help of all our community so if y
 To set up the website locally and to contribute you need:
 * Github account
 * Git
-* Ruby 
+* Ruby
 * Bundle gem
 * Jekill
 
@@ -31,7 +31,7 @@ We also provide a [Vagrant file]()
 ## Build with
 
 This project is built with the help of
- 
+
  * [flexbox grid](http://flexboxgrid.com/)
  * [jekyll](https://jekyllrb.com/)
  * Github pages
