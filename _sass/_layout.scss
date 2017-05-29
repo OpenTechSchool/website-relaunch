@@ -2,10 +2,9 @@
 header {
 	padding-top: 0.25em;
 	.mainlogo {
-		background-color: $brand-color;
 		font-size: 1.2em;
 		line-height: 2em;
-		color: white;
+		color: $brand-color;
 		font-weight: bold;
 		padding: 0 0.5em;
 	}
