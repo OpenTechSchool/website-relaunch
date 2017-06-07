@@ -1,13 +1,63 @@
-// brand
+// Fonts
 
-$brand-color: #085987;
-$brand-color-lighter: #1F8AB6;
-$brand-color-lightest: #2FB0D5;
+// Esteban
+@include font-face('Esteban', '/fonts/Esteban/Esteban-Regular', 400, $file-formats: ttf);
 
-$brand-color-black: #222222;
-$brand-color-red: #E04C3E;
-$brand-color-red-strong: #FD4B22; 
+// Montserrat
+@include font-face('Montserrat', '/fonts/Montserrat/Montserrat-Regular', 400, $file-formats: ttf);
+@include font-face('Montserrat', '/fonts/Montserrat/Montserrat-Light', 300, $file-formats: ttf);
+@include font-face('Montserrat', '/fonts/Montserrat/Montserrat-Italic', 400, italic, $file-formats: ttf);
+@include font-face('Montserrat', '/fonts/Montserrat/Montserrat-LightItalic', 300, italic, $file-formats: ttf);
+@include font-face('Montserrat', '/fonts/Montserrat/Montserrat-Bold', 700, $file-formats: ttf);
+@include font-face('Montserrat', '/fonts/Montserrat/Montserrat-ExtraLight', 100, $file-formats: ttf);
 
+
+$font-stack-esteban: (
+  "Esteban",
+  serif,
+);
+
+$font-stack-mountserrat: (
+  "Montserrat",
+  sans-serif,
+);
+
+
+// OTS colors
+$ots_blue: #085987; /* main blue, logo */
+$ots_blue_l: #1F8AB6; /* Blue links */
+$ots_blue_h: #2FB0D5; /* Blue hover states */
+$ots_text: #222222; /* Default text color*/
+
+$ots_text_i: #84ACC3; /* (Inverted) Text color on dark blue backgrounds */
+$ots_text_i_l: #C1D5E1; /* (Inverted) Link color on dark blue backgrounds */
+
+$ots_red_l: #E04C3E; /* Highlighted, red links, buttons, other highlights */
+$ots_red_h: #FD4B22; /* Red hover states */
+
+$ots_constrat_pink: #FF4081;
+
+
+// brand - use bitters vars name
+$brand-color: $ots_blue;
+$brand-color-lighter: $ots_blue_l;
+$brand-color-lightest: $ots_blue_h;
+
+$brand-color-black: $ots_text;
+$brand-color-red: $ots_red_l;
+$brand-color-red-strong: $ots_red_h;
+
+
+// Colors
+$blue: $brand-color;
+$dark-gray: $brand-color-black;
+$medium-gray: #999;
+$light-gray: #ddd;
+$white: #ecf0f1;
+
+// Font Colors
+$base-font-color: $brand-color-black;
+$action-color: $brand-color-lighter;
 
 
 // Breakpoints
@@ -15,38 +65,31 @@ $medium-screen: 600px;
 $large-screen: 900px;
 
 // Typography
-$base-font-family: $font-stack-system;
-$heading-font-family: $base-font-family;
+$base-font-family: $font-stack-esteban;
+$heading-font-family: $font-stack-mountserrat;
 
 // Font Sizes
-$base-font-size: 1em;
+$base-font-size: 1.6rem; //16px
+$p-font-small: 1.2rem;
+$logo-size: 2rem;
+
 
 // Line height
 $base-line-height: 1.5;
 $heading-line-height: 1.2;
 
 // Other Sizes
-$base-border-radius: 3px;
-$base-spacing: $base-line-height * 1em;
+$base-border-radius: 1px;
+$base-spacing: $base-line-height * 1.6em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
-
-// Colors
-$blue: $brand-color;
-$dark-gray: $brand-color-black;
-$medium-gray: #999;
-$light-gray: #ddd;
-
-// Font Colors
-$base-font-color: $brand-color-black;
-$action-color: $brand-color-lighter;
 
 // Border
 $base-border-color: $light-gray;
 $base-border: 1px solid $base-border-color;
 
 // Background Colors
-$base-background-color: #fff;
+$base-background-color: $white;
 $secondary-background-color: tint($base-border-color, 75%);
 
 // Forms

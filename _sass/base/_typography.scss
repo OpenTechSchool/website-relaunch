@@ -1,3 +1,7 @@
+html {
+  font-size: 62.5%; // =10px
+}
+
 body {
   color: $base-font-color;
   font-family: $base-font-family;
@@ -19,9 +23,38 @@ h6 {
   margin: 0 0 $small-spacing;
 }
 
+h1 {
+  font-size: 28px;
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+h1, h2 {
+  padding: 20px 0;
+}
+
+h3, h4 {
+  padding: 10px 0;
+}
+
 p {
+  text-align: justify;
   margin: 0 0 $small-spacing;
 }
+
+.small-p {
+  font-size: $p-font-small;
+}
+
 
 a {
   color: $action-color;
@@ -42,3 +75,4 @@ hr {
   border-top: 0;
   margin: $base-spacing 0;
 }
+
