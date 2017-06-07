@@ -1,0 +1,20 @@
+$svg-path: "/assets/statics/svg/";
+
+
+.i-idea-baloons {
+	background-image: url(#{$svg-path}chat.svg);
+	width: 100px;
+	height: 100px;
+}
+
+.i-world-connections {
+	background-image: url(#{$svg-path}world-connection.svg);
+	width: 120px;
+	height: 120px;
+}
+
+.i-people-chat {
+	background-image: url(#{$svg-path}people-chat.svg);
+	width: 80px;
+	height: 80px;
+}
