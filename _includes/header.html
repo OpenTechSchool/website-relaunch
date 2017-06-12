@@ -2,10 +2,10 @@
   <div class="container-fluid">
     <nav class="row middle-xs between-xs">
       <a class="mainlogo" href="{{site.baseurl}}/" >OpenTechSchool</a>
-        <ul class="main row col-xs-7 between-xs">
-          {% include _render_nav.html nav=site.data.nav.social %}
+        <div class="main flexbox-container">
+          {% include _render_nav.html nav=site.data.nav.social %}  
           {% include _render_nav.html nav=site.data.nav.main %}
-        </ul>
+        </div>
       </div>
     </nav>
   </div>

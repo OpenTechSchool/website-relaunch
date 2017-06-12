@@ -20,9 +20,11 @@ a {
 
 header {
 	font-family: $heading-font-family;
+	font-size: 1.2rem;
+	font-weight: 400;
 	padding-top: 0.25em;
 	margin-top: 10px;
-  padding: 0px 10px;
+ 	padding: 0px 10px;
 
 	.mainlogo {
 		font-size: $logo-size;
@@ -40,6 +42,12 @@ header {
 	.main {
 		margin-top: 0.25em;
 		text-transform: uppercase;
+	}
+
+	.flexbox-container {
+		display: flex;
+		justify-content: space-between;
+		width: 50%;
 	}
 }
 
