@@ -3,8 +3,8 @@
     <nav class="row middle-xs between-xs">
       <a class="mainlogo" href="{{site.baseurl}}/" >OpenTechSchool</a>
       <div class="main row between-xs col-xs-6">
+        {% include _render_nav.html nav=site.data.nav.navigation %}
         {% include _render_nav.html nav=site.data.nav.social %}  
-        {% include _render_nav.html nav=site.data.nav.main %}
       </div>
     </nav>
   </div>
