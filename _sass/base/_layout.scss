@@ -39,6 +39,20 @@ header {
 		text-transform: lowercase;
 	}
 
+	.dropdown a {
+		text-align: left;
+		display: block;
+	}
+
+	.submenu {
+		text-align: left;
+		display: none;
+	}
+
+	.dropdown.open .submenu {
+		display: block;
+	}
+
 	.main {
 		margin-top: 0.25em;
 		text-transform: uppercase;
