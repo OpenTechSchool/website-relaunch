@@ -47,8 +47,18 @@ header {
 	.submenu {
 		text-align: left;
 		display: none;
+		position: absolute;
+		background-color: $brand-color;
+		min-width: 160px;
+		border-style: 1px solid;
+    	border-color: #FFF;
 	}
 
+	.submenu a {
+		color: white;
+	    padding: 10px;
+    	border-top: 1px solid #FFF;
+	}
 	.dropdown.open .submenu {
 		display: block;
 	}

@@ -27,7 +27,6 @@ navigation:
         url: about/projects/
       - title: "OTS People"
         url: about/otspeople/
-      - title: ""
   - title: "About"
     url: "/about/"
     # nav: "about"
