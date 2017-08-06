@@ -24,7 +24,7 @@ header {
 	font-weight: 400;
 	padding-top: 0.25em;
 	margin-top: 10px;
- 	padding: 0px 10px;
+ 	padding: 0 10px;
 
 	.mainlogo {
 		font-size: $logo-size;
@@ -52,14 +52,20 @@ header {
 		min-width: 160px;
 		border-style: 1px solid;
     	border-color: #FFF;
-		z-index:999;
+		z-index: 999;
+
+		a {
+			color: white;
+    		border-top: 1px solid #FFF;
+		}
 	}
 
-	.submenu a {
+
+	.dropdown.open a {
 		color: white;
-	    padding: 10px;
-    	border-top: 1px solid #FFF;
+		background-color: $brand-color;
 	}
+
 	.dropdown.open .submenu {
 		display: block;
 	}
@@ -67,8 +73,12 @@ header {
 	.main {
 		margin-top: 0.25em;
 		text-transform: uppercase;
+		a {
+	    	padding: 10px;
+		}
 	}
 
+	
 }
 
 .section-bkg {

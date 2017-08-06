@@ -24,7 +24,7 @@ jQuery.noConflict();
     dropdownOpen : function() {
       $('.dropdown').on('click', 'a', function(event){
         var target = event.target
-        $(target).parent().toggleClass('open');
+        $(target).parent().toggleClass('open').siblings().removeClass('open');
       })
     }
   }
