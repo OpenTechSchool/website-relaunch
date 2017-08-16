@@ -2,7 +2,7 @@
 
 	{% if item.sub !=null %}
 		<div class="dropdown">
-			<a>{{item.title}}</a>
+			<a>{{item.title}} <i class="fa fa-chevron-down"></i></a>
 			<ul class="submenu">
 
 	  		{% for subitem in item.sub %}
