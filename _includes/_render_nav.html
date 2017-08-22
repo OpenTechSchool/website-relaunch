@@ -2,7 +2,9 @@
 
 	{% if item.sub !=null %}
 		<div class="dropdown">
-			<a>{{item.title}} <i class="fa fa-chevron-down"></i></a>
+
+			<a class="arrow">{{item.title}}</a>
+
 			<ul class="submenu">
 
 	  		{% for subitem in item.sub %}
@@ -13,6 +15,13 @@
 		</div>
 
   	{% else %}
-		<a href="{{item.url}}">{{item.title}}</a>
+	  	{% if item.icon %}
+			<a class="{{item.icon}}" href="{{item.url}}"></a>
+
+	  	{% else %}
+			<a href="{{item.url}}">{{item.title}}</a>
+
+		{% endif %}
+
 	{% endif %}
 {% endfor %}

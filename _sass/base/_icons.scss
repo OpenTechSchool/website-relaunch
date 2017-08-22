@@ -18,3 +18,24 @@ $svg-path: "/assets/statics/svg/";
 	width: 80px;
 	height: 80px;
 }
+
+.twitter::after {
+	content: "\f099";
+	font-family: "FontAwesome";
+	font-size: 2rem;
+	display: inline-block;
+}
+
+.facebook::after {
+	content: "\f09a";
+	font-family: "FontAwesome";
+	font-size: 2rem;
+	display: inline-block;
+}
+
+.heart::after {
+	content: "\f004";
+	font-family: "FontAwesome";
+	font-size: 2rem;
+	display: inline-block;
+}

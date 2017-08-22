@@ -39,11 +39,33 @@ header {
 		text-transform: lowercase;
 	}
 
-	.dropdown a {
-		text-align: left;
-		display: block;
+	.dropdown {
+		a {
+			text-align: left;
+			display: block;
+		}
+		.arrow::after  {
+			font-family: "FontAwesome";
+			content: "\f078";
+			padding: 2px 2px;
+			font-size: 1rem;
+		}
+		&.open {
+			a {
+				color: white;
+				background-color: $brand-color;
+				padding: 8px;
+			}
+			.arrow::after {
+				font-family: "FontAwesome";
+				content: "\f00d";
+				padding: 1px;
+				padding-left: 3px;
+				font-size: 1rem;
+			}
+		}
 	}
-
+	
 	.submenu {
 		text-align: left;
 		display: none;
@@ -56,14 +78,11 @@ header {
 
 		a {
 			color: white;
-    		border-top: 1px solid #FFF;
-		}
-	}
-
-
-	.dropdown.open a {
-		color: white;
-		background-color: $brand-color;
+    		border-top: 1px solid #6c92ab;
+    		&:hover{
+    			background-color: $ots_blue_l;
+    		}
+    	}
 	}
 
 	.dropdown.open .submenu {
