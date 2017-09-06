@@ -1,27 +1,27 @@
 {% for item in include.nav %}
 
-	{% if item.sub !=null %}
-		<div class="dropdown">
+  {% if item.sub !=null %}
+    <div class="dropdown">
 
-			<a class="arrow">{{item.title}}</a>
+      <a class="arrow">{{item.title}}</a>
 
-			<ul class="submenu">
+      <ul class="submenu">
 
-	  		{% for subitem in item.sub %}
-	  			<li><a href="{{subitem.url}}">{{subitem.title}}</a></li>
-	  		{% endfor %}
+        {% for subitem in item.sub %}
+          <li><a href="{{subitem.url}}">{{subitem.title}}</a></li>
+        {% endfor %}
 
-			</ul>
-		</div>
+      </ul>
+    </div>
 
-  	{% else %}
-	  	{% if item.icon %}
-			<a class="{{item.icon}}" href="{{item.url}}"></a>
+    {% else %}
+      {% if item.icon %}
+        <a class="{{item.icon}}" href="{{item.url}}"></a>
 
-	  	{% else %}
-			<a href="{{item.url}}">{{item.title}}</a>
+      {% else %}
+        <a href="{{item.url}}">{{item.title}}</a>
 
-		{% endif %}
+    {% endif %}
 
-	{% endif %}
+  {% endif %}
 {% endfor %}
