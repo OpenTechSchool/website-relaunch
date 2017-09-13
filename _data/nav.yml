@@ -4,7 +4,7 @@ social:
     url: "https://twitter.com/OpenTechSchool"
   - title: "Facebook"
     icon: "facebook"
-    url: ""
+    url: "https://www.facebook.com/OpenTechSchool/"
   - title: "Donate"
     icon: "heart"
     url: "/foundation/donate"

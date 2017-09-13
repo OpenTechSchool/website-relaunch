@@ -43,6 +43,7 @@ header {
 		a {
 			text-align: left;
 			display: block;
+			padding: 8px;			
 		}
 		.arrow::after  {
 			font-family: "FontAwesome";
@@ -54,7 +55,6 @@ header {
 			a {
 				color: white;
 				background-color: $brand-color;
-				padding: 8px;
 			}
 			.arrow::after {
 				font-family: "FontAwesome";
