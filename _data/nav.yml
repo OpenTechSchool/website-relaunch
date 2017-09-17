@@ -1,26 +1,16 @@
-social:
-  - title: "Twitter"
-    icon: "twitter"
-    url: "https://twitter.com/OpenTechSchool"
-  - title: "Facebook"
-    icon: "facebook"
-    url: "https://www.facebook.com/OpenTechSchool/"
-  - title: "Donate"
-    icon: "heart"
-    url: "/foundation/donate"
-
 navigation:
   - title: "Learn"
-    desc: "Want to start learning, click here"
     url: "/learn"
     # nav: learn
+    basic: true
   - title: "Contribute"
     url: "/contribute"
     # nav: contribute
+    basic: true
   - title: "Community"
     url: "/community/"
     nav: "community"
-    sub: 
+    sub:
       - title: "Chapters"
         url: about/chapters/
       - title: "Projects"
@@ -30,7 +20,7 @@ navigation:
   - title: "About"
     url: "/about/"
     # nav: "about"
-    sub: 
+    sub:
       - title: "History"
         url: /about/history/
       - title: "Projects"
@@ -41,7 +31,20 @@ navigation:
         url: /about/drive
       - title: "Contact"
         url: /about/contact
-        
+  - title: "Twitter"
+    icon: "twitter"
+    social: true
+    url: "https://twitter.com/OpenTechSchool"
+  - title: "Facebook"
+    icon: "facebook"
+    social: true
+    url: "https://www.facebook.com/OpenTechSchool/"
+  - title: "Donate"
+    icon: "heart"
+    url: "/foundation/donate"
+    social: true
+
+
 
 learn:
   - title: "Materials"

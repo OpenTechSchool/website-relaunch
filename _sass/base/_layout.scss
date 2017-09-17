@@ -41,9 +41,9 @@ header {
 
 	.dropdown {
 		a {
-			text-align: left;
+			text-align: center;
 			display: block;
-			padding: 8px;			
+			padding: 8px;
 		}
 		.arrow::after  {
 			font-family: "FontAwesome";
@@ -65,40 +65,130 @@ header {
 			}
 		}
 	}
-	
+
 	.submenu {
 		text-align: left;
 		display: none;
-		position: absolute;
+		// position: absolute;
+		position: relative;
 		background-color: $brand-color;
 		min-width: 160px;
 		border-style: 1px solid;
-    	border-color: #FFF;
+  	border-color: #FFF;
 		z-index: 999;
 
 		a {
 			color: white;
-    		border-top: 1px solid #6c92ab;
-    		&:hover{
-    			background-color: $ots_blue_l;
-    		}
-    	}
+  		border-top: 1px solid #6c92ab;
+  		&:hover{
+  			background-color: $ots_blue_l;
+  		}
+  	}
 	}
 
 	.dropdown.open .submenu {
 		display: block;
 	}
+}
 
-	.main {
-		margin-top: 0.25em;
-		text-transform: uppercase;
-		a {
-	    	padding: 10px;
-		}
+
+// ============== //
+
+.nav-links {
+	text-transform: uppercase;
+	justify-content: flex-end;
+	width: 100%;
+	margin-top: -50px;
+}
+
+.nav-links-list {
+  background-color: yellow;
+  display: block;
+  height: 0;
+  list-style-type: none;
+  opacity: 0;
+  text-align: center;
+  transition: all 1s ease;
+  width: 100%;
+  visibility: hidden;
+
+  > li {
+	  border-bottom: 2px solid black;
+	  color: black;
+	  display: block;
+	  font-size: 1.5em;
+	  padding: 2em 0;
 	}
 
-	
+	a {
+	  	padding: 10px;
+	}
 }
+
+#menu-toggle {display: none;}
+#menu-toggle:checked ~ ul {
+  opacity: 1;
+  height: 100vh;
+  visibility: visible;
+}
+
+.label-toggle {
+  background: linear-gradient(to bottom, #E84545 0%, #E84545 20%, transparent 20%, transparent 40%, #E84545 40%, #E84545 60%, transparent 60%, transparent 80%, #E84545 80%, #E84545 100%);
+  cursor: pointer;
+  display: block;
+  float: right;
+  height: 35px;
+  margin-top: 1em;
+  width: 35px;
+}
+
+@media screen and (min-width: $medium-screen) {
+	.nav-links {
+		justify-content: flex-start;
+    width: auto;
+    margin-top: 0.25em;
+	}
+
+	.label-toggle {display: none;}
+	#menu-toggle ~ ul {
+	  opacity: 1;
+	  height: auto;
+	  visibility: visible;
+	}
+
+	.nav-links-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+
+    > li  {
+	    display: inline-block;
+	  }
+
+    a {
+      color: black;
+      text-decoration: none;
+      transition: all .5s ease;
+
+      &:hover {color: green;}
+    }
+  }
+
+	.label-toggle {
+		display: none;
+	}
+
+	.submenu {
+		position: absolute;
+	}
+
+	.dropdown a {
+		text-align: center;
+	}
+}
+
+// ---------------------------- //
 
 .section-bkg {
 	margin-top: 50px;
