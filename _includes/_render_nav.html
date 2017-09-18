@@ -1,22 +1,19 @@
 {% for item in include.nav %}
 
-  {% if item.social %}
-    <a href="{{item.url}}" class="{{item.icon}}" target='_blank'></a>
-  {% endif %}
-
   {% if item.sub %}
-    <div class="dropdown">
-      <a class="arrow">{{item.title}}</a>
-      <ul class="submenu">
+    <li class='dropdown'>
+      <a class='arrow'>{{item.title}}</a>
+      <ul class='submenu'>
         {% for subitem in item.sub %}
           <li><a href="{{subitem.url}}">{{subitem.title}}</a></li>
         {% endfor %}
       </ul>
-    </div>
-  {% endif %}
+    </li>
 
-  {% if item.basic %}
-    <a href="{{item.url}}">{{item.title}}</a>
+  {% else %}
+
+    <li><a href="{{item.url}}">{{item.title}}</a> </li>
   {% endif %}
 
 {% endfor %}
+

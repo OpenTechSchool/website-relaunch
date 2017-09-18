@@ -4,23 +4,15 @@
       <a class="mainlogo" href="{{site.baseurl}}/" >OpenTechSchool</a>
 
       <div class="nav-links row between-sm col-sm-6 ">
-      {% comment %}
-        {% include _render_nav.html nav=site.data.nav.navigation %}
-      {% endcomment %}
+        <input type="checkbox" id="menu-toggle">
+  			<label for="menu-toggle" class="label-toggle"></label>
 
-      <input type="checkbox" id="menu-toggle">
-			<label for="menu-toggle" class="label-toggle"></label>
-      <ul class='nav-links-list'>
-      	<li class='dropdown'>
-	      	<a class='arrow'>item 1</a>
-	      	<ul class='submenu'>
-	      		<li><a>item 2</a> </li>
-		      	<li><a>item 3</a></li>
-	      	</ul>
-      	</li>
-      	<li><a>item 2</a> </li>
-      	<li><a>item 3</a></li>
-      </ul>
+        <ul class='nav-links-list'>
+          {% include _render_nav.html nav=site.data.nav.navigation %}
+        </ul>
+        <div class='nav-social'>
+          {% include _render_social_list.html nav=site.data.nav.social %}
+        </div>
 
       </div>
     </nav>

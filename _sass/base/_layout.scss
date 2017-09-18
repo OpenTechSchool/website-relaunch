@@ -34,54 +34,90 @@ header {
 		padding: 0 0.5em;
 	}
 
-	.social-links {
-		font-size: $p-font-small;
-		text-transform: lowercase;
+
+	#menu-toggle {display: none;}
+	#menu-toggle:checked ~ ul {
+	  opacity: 1;
+	  height: 100vh;
+	  visibility: visible;
+	}
+
+	.label-toggle {
+	  background: $brand-color;
+	  cursor: pointer;
+	  display: block;
+	  float: right;
+	  height: 35px;
+	  margin-top: 1em;
+	  width: 35px;
+	}
+
+	.nav-links {
+		text-transform: uppercase;
+		justify-content: flex-end;
+		width: 100%;
+		margin-top: -50px;
+	}
+
+	.nav-links-list {
+	  display: block;
+	  height: 0;
+	  list-style-type: none;
+	  opacity: 0;
+	  text-align: center;
+	  transition: all 1s ease;
+	  width: 100%;
+	  visibility: hidden;
+	  > li {
+		  color: $brand-color;
+		  display: block;
+		  font-size: 1.2em;
+	    padding: 12px 8px 0px;
+		}
+		a {
+	  	display: block;
+			padding: 6px;
+		}
 	}
 
 	.dropdown {
 		a {
 			text-align: center;
-			display: block;
-			padding: 8px;
 		}
 		.arrow::after  {
 			font-family: "FontAwesome";
 			content: "\f078";
-			padding: 2px 2px;
-			font-size: 1rem;
+	    font-size: 1.2rem;
+	    top: -2px;
+	    position: relative;
+      padding: 0 6px;
 		}
 		&.open {
-			a {
-				color: white;
-				background-color: $brand-color;
-			}
+			background-color: $brand-color;
+			a { color: white }
 			.arrow::after {
-				font-family: "FontAwesome";
 				content: "\f00d";
-				padding: 1px;
-				padding-left: 3px;
-				font-size: 1rem;
 			}
 		}
 	}
 
 	.submenu {
-		text-align: left;
 		display: none;
-		// position: absolute;
+		text-align: left;
 		position: relative;
 		background-color: $brand-color;
 		min-width: 160px;
-		border-style: 1px solid;
-  	border-color: #FFF;
+		text-transform: capitalize;
+		border-bottom: 1px solid white;
 		z-index: 999;
-
+		margin-left: -10px;
+    margin-top: 6px;
 		a {
 			color: white;
-  		border-top: 1px solid #6c92ab;
+  		border-top: 1px solid white;
+	    padding: 14px 10px;
   		&:hover{
-  			background-color: $ots_blue_l;
+  			background-color: lighten($brand-color, 15%);
   		}
   	}
 	}
@@ -91,104 +127,53 @@ header {
 	}
 }
 
-
-// ============== //
-
-.nav-links {
-	text-transform: uppercase;
-	justify-content: flex-end;
-	width: 100%;
-	margin-top: -50px;
-}
-
-.nav-links-list {
-  background-color: yellow;
-  display: block;
-  height: 0;
-  list-style-type: none;
-  opacity: 0;
-  text-align: center;
-  transition: all 1s ease;
-  width: 100%;
-  visibility: hidden;
-
-  > li {
-	  border-bottom: 2px solid black;
-	  color: black;
-	  display: block;
-	  font-size: 1.5em;
-	  padding: 2em 0;
-	}
-
-	a {
-	  	padding: 10px;
-	}
-}
-
-#menu-toggle {display: none;}
-#menu-toggle:checked ~ ul {
-  opacity: 1;
-  height: 100vh;
-  visibility: visible;
-}
-
-.label-toggle {
-  background: linear-gradient(to bottom, #E84545 0%, #E84545 20%, transparent 20%, transparent 40%, #E84545 40%, #E84545 60%, transparent 60%, transparent 80%, #E84545 80%, #E84545 100%);
-  cursor: pointer;
-  display: block;
-  float: right;
-  height: 35px;
-  margin-top: 1em;
-  width: 35px;
-}
-
 @media screen and (min-width: $medium-screen) {
-	.nav-links {
-		justify-content: flex-start;
-    width: auto;
-    margin-top: 0.25em;
-	}
+	header {
+		.nav-links {
+			justify-content: flex-start;
+	    width: auto;
+	    margin-top: 0.25em;
+		}
 
-	.label-toggle {display: none;}
-	#menu-toggle ~ ul {
-	  opacity: 1;
-	  height: auto;
-	  visibility: visible;
-	}
+		.label-toggle {display: none;}
+		#menu-toggle ~ ul {
+		  opacity: 1;
+		  height: auto;
+		  visibility: visible;
+		}
 
-	.nav-links-list {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    width: 100%;
+		.nav-links-list {
+	    display: flex;
+	    width: auto;
+	    > li  {
+		    padding: 12px 10px;
+		  }
 
-    > li  {
-	    display: inline-block;
+	    a {
+	      text-decoration: none;
+	      transition: all .5s ease;
+	    }
 	  }
 
-    a {
-      color: black;
-      text-decoration: none;
-      transition: all .5s ease;
+	  .submenu {
+	  	position: absolute;
+	  	a {
+		  	text-align: left;
+		  	font-size: 1.1rem;
+		    text-align: left;
+		  }
+	  }
 
-      &:hover {color: green;}
-    }
-  }
+		.label-toggle {
+			display: none;
+		}
 
-	.label-toggle {
-		display: none;
-	}
+		.nav-social {
 
-	.submenu {
-		position: absolute;
-	}
-
-	.dropdown a {
-		text-align: center;
+		}
 	}
 }
 
-// ---------------------------- //
 
 .section-bkg {
 	margin-top: 50px;
