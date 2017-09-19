@@ -59,6 +59,13 @@ header {
 		margin-top: -50px;
 	}
 
+	.nav-social {
+		height: 0;
+		opacity: 0;
+		width: 100%;
+	  visibility: hidden;
+	}
+
 	.nav-links-list {
 	  display: block;
 	  height: 0;
@@ -83,6 +90,7 @@ header {
 	.dropdown {
 		a {
 			text-align: center;
+	    padding-left: 0;
 		}
 		.arrow::after  {
 			font-family: "FontAwesome";
@@ -106,18 +114,21 @@ header {
 		text-align: left;
 		position: relative;
 		background-color: $brand-color;
-		min-width: 160px;
+		min-width: 200px;
 		text-transform: capitalize;
-		border-bottom: 1px solid white;
+		border-bottom: 2px solid white;
 		z-index: 999;
 		margin-left: -10px;
     margin-top: 6px;
 		a {
+			font-size: 1.3rem;
+			font-weight: 100;
 			color: white;
-  		border-top: 1px solid white;
 	    padding: 14px 10px;
+	    border-bottom: 1px solid transparent;
   		&:hover{
-  			background-color: lighten($brand-color, 15%);
+	  		border-bottom: 2px solid white;
+		    font-size: 1.5rem;
   		}
   	}
 	}
@@ -146,7 +157,7 @@ header {
 	    display: flex;
 	    width: auto;
 	    > li  {
-		    padding: 12px 10px;
+		    padding: 8px 6px 12px 10px;
 		  }
 
 	    a {
@@ -159,8 +170,6 @@ header {
 	  	position: absolute;
 	  	a {
 		  	text-align: left;
-		  	font-size: 1.1rem;
-		    text-align: left;
 		  }
 	  }
 
@@ -169,7 +178,13 @@ header {
 		}
 
 		.nav-social {
-
+			opacity: 1;
+			visibility: visible;
+			width: auto;
+			padding: 12px 10px;
+			a {
+		    padding: 0 14px;
+			}
 		}
 	}
 }
