@@ -1,10 +1,13 @@
 ---
 published: true
 layout: page
-title: Learning Materials
-permalink: /materials/
+title: Learn
 ---
 
+#### LEARNERS
+Hi, i'm a dummy introduction text for learners
+
+## Materials
 All OpenTechSchool Materials are open-source under the
 [Creative Commons ShareAlike Attribution][CC-SA] as described in our [values].
 
@@ -47,3 +50,7 @@ Arduino wants your love and help in developing further materials. Join the [ardu
 [python-discuss]: https://github.com/OpenTechSchool/python/wiki
 [HTMLCSS]: http://opentechschool.github.io/html-css-beginners/
 [social-git]: http://opentechschool.github.io/social-coding/
+
+### Learners's guide<
+
+

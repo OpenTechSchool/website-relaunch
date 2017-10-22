@@ -12,25 +12,25 @@ navigation:
     nav: "community"
     sub:
       - title: "Chapters"
-        url: about/chapters/
+        url: "/chapters/"
       - title: "Projects"
-        url: about/projects/
-      - title: "OTS People"
-        url: about/otspeople/
+        url: "/projects/"
+      - title: "Our Stories"
+        url: "/stories/"
   - title: "About"
     url: "/about/"
     # nav: "about"
     sub:
-      - title: "History"
-        url: /about/history/
+      - title: "Our history"
+        url: "/history/"
       - title: "Projects"
-        url: /about/projects/
-      - title: "Where we operate"
-        url: /about/operate/
+        url: "/projects/"
+      - title: "Where"
+        url: "/where/"
       - title: "What drive us"
-        url: /about/drive
+        url: "/drive"
       - title: "Contact"
-        url: /about/contact
+        url: "/contact"
 
 social:
   - title: "Twitter"
@@ -42,29 +42,3 @@ social:
   - title: "Donate"
     icon: "heart"
     url: "/foundation/donate"
-
-learn:
-  - title: "Materials"
-    desc: "Find our Learning Materials"
-    url: "/learning/materials/"
-  - title: "Learner-friendly Projects"
-    url: "/learn/projects"
-community:
-  - title: "Chapters"
-    url: about/chapters/
-  - title: "Projects"
-    url: about/projects/
-  - title: "OTS People"
-    url: about/otspeople/
-  - title: ""
-about:
-  - title: "History"
-    url: /about/history/
-  - title: "Projects"
-    url: /about/projects/
-  - title: "Where we operate"
-    url: /about/operate/
-  - title: "What drive us"
-    url: /about/drive
-  - title: "Contact"
-    url: /about/contact
