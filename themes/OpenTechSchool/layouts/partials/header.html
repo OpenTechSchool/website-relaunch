@@ -1,0 +1,20 @@
+<header>
+  <div class="container-fluid">
+    <nav class="row middle-sm between-xs">
+      <a class="mainlogo" href="{{.Site.BaseURL}}">OpenTechSchool</a>
+
+      <div class="nav-links row between-sm col-sm-6 ">
+        <input type="checkbox" id="menu-toggle">
+  			<label for="menu-toggle" class="label-toggle"></label>
+
+        <ul class='nav-links-list'>
+          {{ partial "_render_nav.html" .Site.Data.nav }}
+        </ul>
+        <ul class='nav-social'>
+          {{ partial "_render_social_list.html" .Site.Data.nav }}
+        </ul>
+
+      </div>
+    </nav>
+  </div>
+</header>

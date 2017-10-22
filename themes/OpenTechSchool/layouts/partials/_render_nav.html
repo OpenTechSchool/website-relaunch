@@ -1,0 +1,18 @@
+{{ range $item := .navigation }}
+  {{ if $item.sub }}
+    <li class='dropdown'>
+      <a class='arrow'>{{$item.title}}</a>
+      <ul class='submenu'>
+        {{ range $subitem := $item.sub }}
+          <li>
+            <a href="{{$subitem.url}}">{{$subitem.title}}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </li>
+  {{ else }}
+    <li>
+      <a href="{{$item.url}}">{{$item.title}}</a>
+    </li>
+  {{ end }}
+{{ end }}

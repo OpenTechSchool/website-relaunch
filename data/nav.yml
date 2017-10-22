@@ -1,0 +1,44 @@
+navigation:
+  - title: "Learn"
+    url: "/learn"
+    # nav: learn
+    basic: true
+  - title: "Contribute"
+    url: "/contribute"
+    # nav: contribute
+    basic: true
+  - title: "Community"
+    url: "/community/"
+    nav: "community"
+    sub:
+      - title: "Chapters"
+        url: "/chapters/"
+      - title: "Projects"
+        url: "/projects/"
+      - title: "Our Stories"
+        url: "/stories/"
+  - title: "About"
+    url: "/about/"
+    # nav: "about"
+    sub:
+      - title: "Our history"
+        url: "/history/"
+      - title: "Projects"
+        url: "/projects/"
+      - title: "Where"
+        url: "/where/"
+      - title: "What drive us"
+        url: "/drive"
+      - title: "Contact"
+        url: "/contact"
+
+social:
+  - title: "Twitter"
+    icon: "twitter"
+    url: "https://twitter.com/OpenTechSchool"
+  - title: "Facebook"
+    icon: "facebook"
+    url: "https://www.facebook.com/OpenTechSchool/"
+  - title: "Donate"
+    icon: "heart"
+    url: "/foundation/donate"
