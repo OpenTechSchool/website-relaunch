@@ -1,29 +1,47 @@
+navigation:
+  - title: "Learn"
+    url: "/learn"
+    # nav: learn
+    basic: true
+  - title: "Contribute"
+    url: "/contribute"
+    # nav: contribute
+    basic: true
+  - title: "Community"
+    url: "/community/"
+    nav: "community"
+    sub:
+      - title: "Chapters"
+        url: about/chapters/
+      - title: "Projects"
+        url: about/projects/
+      - title: "OTS People"
+        url: about/otspeople/
+  - title: "About"
+    url: "/about/"
+    # nav: "about"
+    sub:
+      - title: "History"
+        url: /about/history/
+      - title: "Projects"
+        url: /about/projects/
+      - title: "Where we operate"
+        url: /about/operate/
+      - title: "What drive us"
+        url: /about/drive
+      - title: "Contact"
+        url: /about/contact
+
 social:
   - title: "Twitter"
     icon: "twitter"
     url: "https://twitter.com/OpenTechSchool"
   - title: "Facebook"
     icon: "facebook"
-    url: ""
+    url: "https://www.facebook.com/OpenTechSchool/"
   - title: "Donate"
     icon: "heart"
     url: "/foundation/donate"
-
-main:
-  - title: "Learn"
-    desc: "Want to start learning, click here"
-    url: "/learn"
-    # nav: learn
-  - title: "Contribute"
-    url: "/contribute"
-    # nav: contribute
-  - title: "Community"
-    url: "/community/"
-    nav: "community"
-  - title: "About"
-    url: "/about/"
-    # nav: "about"
-
 
 learn:
   - title: "Materials"
@@ -33,22 +51,20 @@ learn:
     url: "/learn/projects"
 community:
   - title: "Chapters"
-    url: "/chapters/"
+    url: about/chapters/
   - title: "Projects"
-    url: "/projects"
-  - title: "People"
-    url: "/people"
+    url: about/projects/
+  - title: "OTS People"
+    url: about/otspeople/
   - title: ""
 about:
-  - title: "Foundation"
-    url: /about/foundation/
   - title: "History"
     url: /about/history/
-  - title: "Our Values"
-    url: /about/values
   - title: "Projects"
-    url: /projects/
-  - title: "Press"
-    url: /press/
-  - title: "Imprint"
-    url: /imprint/
+    url: /about/projects/
+  - title: "Where we operate"
+    url: /about/operate/
+  - title: "What drive us"
+    url: /about/drive
+  - title: "Contact"
+    url: /about/contact

@@ -20,6 +20,13 @@ jQuery.noConflict();
           }
         });
     },
+
+    dropdownOpen : function() {
+      $('.dropdown').on('click', 'a', function(event){
+        var target = event.target
+        $(target).parent().toggleClass('open').siblings().removeClass('open');
+      })
+    }
   }
 
   // functionality page or sections specific
@@ -157,6 +164,7 @@ jQuery.noConflict();
   app.init = function()
   {
     //Functions for page ready
+    app.materials.dropdownOpen();
   }
   app.scrollOne = function() {
 
