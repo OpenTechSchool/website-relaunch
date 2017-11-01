@@ -7,7 +7,9 @@ The source code behind the new OTS main web site.
 ```
 
 
-## Commands
+## Setup
+
+This site is built using [Hugo](https://gohugo.io/), a static site generator. After installing it, you can run
 
 ```sh
 hugo
