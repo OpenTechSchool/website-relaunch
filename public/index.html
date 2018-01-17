@@ -1,1 +1,448 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta name="generator" content="Hugo 0.32.4" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+	<meta name="description" content="      OpenTechSchool is a community initiative to
+      provide programming and other tech-related workshops to women and their
+      friends of all genders. We take care of the organizational side of things
+      (venues, press, finding participants) and let our volunteer coaches to create
+      the curriculum according to their vision. Our main goal is to create a
+      friendly and safe learning environment where no one feels shy about asking any
+      question. Everyone, no matter what their gender, skill level or experience, is
+      invited to participate, whether as a coach or a learner
+      " />
+  <title>Hands-on. Empowering. Peer-driven. || Tech Education ♥ how it is supposed to be || OpenTechSchool.org</title>
+  <meta name="description" content="      OpenTechSchool is a community initiative to
+      provide programming and other tech-related workshops to women and their
+      friends of all genders. We take care of the organizational side of things
+      (venues, press, finding participants) and let our volunteer coaches to create
+      the curriculum according to their vision. Our main goal is to create a
+      friendly and safe learning environment where no one feels shy about asking any
+      question. Everyone, no matter what their gender, skill level or experience, is
+      invited to participate, whether as a coach or a learner
+      " />
+  <meta name="author" content="OpenTechSchool">
+  <meta property="og:title" content="OpenTechSchool" />
+  <meta property="og:type" content="school" />
+  <meta property="og:url" content="http://http://opentechschool.org/" />
+  <meta property="og:image" content="http://http://opentechschool.org//images/ots_logo_fb.png" />
+  <meta property="og:site_name" content="http://opentechschool.org/" />
+  <meta property="og:description" content="      OpenTechSchool is a community initiative to
+      provide programming and other tech-related workshops to women and their
+      friends of all genders. We take care of the organizational side of things
+      (venues, press, finding participants) and let our volunteer coaches to create
+      the curriculum according to their vision. Our main goal is to create a
+      friendly and safe learning environment where no one feels shy about asking any
+      question. Everyone, no matter what their gender, skill level or experience, is
+      invited to participate, whether as a coach or a learner
+      " />
+
+	<link rel="canonical" href="http://opentechschool.org/" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="http://opentechschool.org/css/main.css" />
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.3/d3.min.js"></script>
+  <script type="text/javascript">
+  (function(){
+  	var _queue = [];
+  	window.MEETUPCOM_KEY = '38406b383fa43605b6b234269316';
+  	window.onStartUp = function(fn){
+  		if (document.readyState === "loading") {
+  			_queue.push(fn);
+  		} else {
+  			
+  			fn();
+  		}
+  	}
+  	document.onreadystatechange = function () {
+	    if (document.readyState === "interactive") {
+	        _queue.forEach(function(fn){
+	        	
+	        	fn();
+	        });
+	    }
+	}
+	function _thenRender(target, templates, fn) {
+		return (function(prms) {
+			return prms.then(function(data) {
+				var args = (templates || []).map(
+					function (tmpl) { return document.getElementById(tmpl).innerHTML});
+				
+				if (!fn) return args[0].template(data);
+				args.unshift(data);
+				return fn.apply(fn, args);
+			})
+			.then(function(rendered) {
+				target.innerHTML = rendered;
+			})
+			.catch(function(error){
+				target.innerHTML = error
+			});
+
+		})
+	}
+	window.fetchAndRender = function(
+		sourceUrl,   
+		targetId,    
+		templates,   
+		fn           
+		) {
+		var target = document.getElementById(targetId);
+		return _thenRender(target, templates, fn)(fetch(sourceUrl)
+			.then(function(resp) { return resp.json() }));
+	}
+	window.fetchJSONPAndRender = function(
+		sourceUrl,   
+		targetId,    
+		templates,   
+		fn           
+		) {
+		var target = document.getElementById(targetId);
+		var prms = new Promise(function (resolve, reject){
+			JSONP(sourceUrl, resolve);
+		});
+		console.log(prms);
+		_thenRender(target, templates, fn)(prms);
+		return prms;
+	}
+})()
+  </script>
+</head>
+
+  <body class="page-http://opentechschool.org/">
+    <header>
+  <div class="container-fluid">
+    <nav class="row middle-sm between-xs">
+      <a class="mainlogo" href="http://opentechschool.org/">OpenTechSchool</a>
+
+      <div class="nav-links row between-sm col-sm-6 ">
+        <input type="checkbox" id="menu-toggle">
+  			<label for="menu-toggle" class="label-toggle"></label>
+
+        <ul class='nav-links-list'>
+          
+  
+    <li>
+      <a href="/learn">Learn</a>
+    </li>
+  
+
+  
+    <li>
+      <a href="/contribute">Contribute</a>
+    </li>
+  
+
+  
+    <li class='dropdown'>
+      <a class='arrow'>Community</a>
+      <ul class='submenu'>
+        
+          <li>
+            <a href="/chapters/">Chapters</a>
+          </li>
+        
+          <li>
+            <a href="/projects/">Projects</a>
+          </li>
+        
+          <li>
+            <a href="/stories/">Our Stories</a>
+          </li>
+        
+      </ul>
+    </li>
+  
+
+  
+    <li class='dropdown'>
+      <a class='arrow'>About</a>
+      <ul class='submenu'>
+        
+          <li>
+            <a href="/history/">Our history</a>
+          </li>
+        
+          <li>
+            <a href="/projects/">Projects</a>
+          </li>
+        
+          <li>
+            <a href="/where/">Where</a>
+          </li>
+        
+          <li>
+            <a href="/drive">What drive us</a>
+          </li>
+        
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+        
+      </ul>
+    </li>
+  
+
+
+        </ul>
+        <ul class='nav-social'>
+          
+  <a href="https://twitter.com/OpenTechSchool" class="twitter" target="_blank" rel="noopener noreferrer"></a>
+
+  <a href="https://www.facebook.com/OpenTechSchool/" class="facebook" target="_blank" rel="noopener noreferrer"></a>
+
+  <a href="/foundation/donate" class="heart" target="_blank" rel="noopener noreferrer"></a>
+
+
+        </ul>
+
+      </div>
+    </nav>
+  </div>
+</header>
+
+    
+
+  <div class="layout-page">
+    <header style="background-image: url(/img/backgrounds/home-hero-bkg.jpg)">
+      <div class="container">
+        <h1>Hands-on. Empowering. Peer-driven.</h1>
+      </div>
+    </header>
+
+
+    <div class="container">
+      
+
+      <article>
+        <section class="intro section-bkg container">
+  <h2>The OpenTechSchool initiative</h2>
+  <p>Hi, we are OpenTechSchool, a distributed community initiative organising <b>welcoming and inclusive code learning</b> happenings with real people in the real world. Our offers are for technology enthusiasts of all ages, genders, backgrounds, and experience levels.</p>
+
+  <div class="row intro__boxes">
+    <div class="col-xs-12 col-sm-4">
+      <a href="/learn" class="intro__boxes__box animate--slideUp">
+        <div class="u-circle-centered"><span class="i-world-connections"></span></div>
+        <h3> Learn & Connect </h3>
+        <p> Loerem Ipsum and some text that i don't know now! Wie gehet's? alles gut und lalala! </p>
+      </a>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <a href="/contribute" class="intro__boxes__box animate--slideUp">
+        <div class="u-circle-centered"><span class="i-people-chat"></span></div>
+        <h3> Be a Coach </h3>
+        <p> Loerem Ipsum and some text that i don't know now! Wie gehet's? alles gut und lalala! </p>
+      </a>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <a href="/community" class="intro__boxes__box animate--slideUp">
+        <div class="u-circle-centered"><span class="i-idea-baloons"></span></div>
+        <h3> Get involve </h3>
+        <p> Loerem Ipsum and some text that i don't know now! Wie gehet's? alles gut und lalala! </p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="row numbers section-bkg section-bkg--blue">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <div class="donut" data-donut="42"></div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="donut" data-donut="12"></div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="donut" data-donut="86"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="upcoming-events section-bkg container">
+  <h2>Find next OTS events next to you!</h2>
+  <p>OpenTechSchool is worldwide, we have different chapters in different part of the world. <br/>
+    Our events are co-learning evenings, full day workshop or special events. In all of them you will find friendly enviroments, coaches there happy to help and support you through your learning process and many otehr learners like you with you can exchange informations and learn together.
+  </p>
+
+  ----- Meetup widget -----
+
+  <a href="" class="u-block"><div class="btn btn--center "> Find OTS event </div></a>
+</section>
+
+<section class="landing-contact-us section-bkg section-bkg--blue">
+  <div class="container">
+    <h2> Get in touch </h2>
+    <p>Got a space to offer for our events? Want to collaborate with us? Got a great idea and want to discuss with us? Willing to support one of our projects?
+    Find the right person to speak with and save time.
+    </p>
+    <a href=""><div class="btn btn-reverse btn--center"> Find your OTS contact person </div></a>
+  </div>
+</section>
+
+<section class="last-discussions section-bkg container">
+  <h2> Want to be more involed or ride the OTS-wave? </h2>
+  <p> Come to our forum where we discuss about new events, programs or learning material. </br>
+    If you got an idea or a feedbacks, you are welcome to write them on our forum.
+  </p>
+
+  ----- Discourse widget -----
+
+  <a href="" class="u-block"><div class="btn btn--center"> See all the discussions </div></a>
+</section>
+
+<section class="callToAction section-bkg section-bkg--pink">
+  <div class="container">
+    <h2> Quick Actions: Join us in your favorit way! </h2>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <a href=""><div class="btn btn-reverse btn--small btn--center"> Join as Coach </div></a>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <a href=""><div class="btn btn-reverse btn--small btn--center"> Join as Organizer </div></a>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <a href="" class="u-block"><div class="btn btn-reverse btn--small btn--center"> Join as Member </div></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </article>
+    </div>
+  </div>
+
+
+
+    <footer>
+  <div class="container-fluid">
+    <ul class="row">
+
+      <li class="col-xs-3">
+        <h3>Get involved</h3>
+        <ul>
+          <li>
+            <a href="#">Organize and event</a>
+          </li>
+          <li>
+            <a href="#">Host an event</a>
+          </li>
+          <li>
+            <a href="#">Become a sponsor</a>
+          </li>
+           <li>
+            <a href="#">Become a member</a>
+          </li>
+           <li>
+            <a href="#">Start a chapter</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="col-xs-3">
+        <h3>Connect</h3>
+        <ul>
+          <li>
+            <a href="https://twitter.com/OpenTechSchool">Twitter</a>
+          </li>
+          <li>
+            <a href="http://localhost:4000/">Facebook</a>
+          </li>
+          <li>
+            <a href="https://gitter.im/OpenTechSchool/www.opentechschool.org">Gitter</a>
+          </li>
+          <li>
+            <a href="#">Forum</a>
+          </li>
+          <li>
+            <a href="http://www.meetup.com/find/?allMeetups=true&amp;keywords=opentechschool&amp;radius=Infinity&amp;sort=default">Meetup</a>
+          </li>
+           <li>
+            <a href="https://github.com/OpenTechSchool">Github</a>
+          </li>
+           <li>
+            <a href="https://github.com/OpenTechSchool/">How to contact us</a>
+          </li>
+        </ul>
+      </li>
+        <li class="col-xs-3">
+        <h3>Our Values</h3>
+        <ul>
+          <li>
+            <a href="#">What drives us</a>
+          </li>
+          <li>
+            <a href="#">Education by us</a>
+          </li>
+           <li>
+            <a href="#">Coaches guidline</a>
+          </li>
+           <li>
+            <a href="#">Code of conduct</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="col-xs-3">
+        <h3>About us</h3>
+        <ul>
+          <li>
+            <a href="press.html">Learn more</a>
+          </li>
+          <li>
+            <a href="imprint.html">FAQ</a>
+          </li>
+          <li>
+            <a href="contact.html">Press</a>
+          </li>
+          <li>
+            <a href="foundation/">Imprint</a>
+          </li>
+          <li>
+            <a href="sponsors.html">Privacy policy</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="disclaimer">
+     <p>
+        
+        <small>
+          Except <a href="imprint.html">where otherwise noted</a>,
+          content on this site is licensed under a
+          <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">
+           Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+        </small>
+      </p>
+
+      <p>
+        © 2016 by
+        <a href="http://www.opentechschool.org/foundation/">
+          OpenTechSchool e.V.
+        </a>&nbsp;&nbsp;||&nbsp;&nbsp;
+        <a href="contact.html">
+          Contact us
+        </a>&nbsp;&nbsp;||&nbsp;&nbsp;
+        <a href="imprint.html">Impressum</a>
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+
+<script type="text/javascript" src="/assets/statics/polyfills/fetch.js"></script>
+<script type="text/javascript" src="/assets/statics/polyfills/template.js"></script>
+<script type="text/javascript" src="/assets/statics/polyfills/jsonp.js"></script>
+
+<script type="text/javascript" src="/scripts/ots-app.js"></script>
+
+  </body>
+</html>

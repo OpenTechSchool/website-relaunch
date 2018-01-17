@@ -1,8 +1,15 @@
 baseURL = "http://opentechschool.org/"
 languageCode = "en-us"
 title = "OpenTechSchool"
-theme = "OpenTechSchool"
 MetaDataFormat = "toml"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+
+[permalinks]
+	page = "/:title/"
+	about = "/:filename/"
 
 [params]
   email = ""

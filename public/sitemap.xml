@@ -3,18 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://opentechschool.org/learn/resource1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://opentechschool.org/learn/resource2/</loc>
+  </url>
+  
+  <url>
+    <loc>http://opentechschool.org/about/</loc>
+  </url>
+  
+  <url>
     <loc>http://opentechschool.org/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://opentechschool.org/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://opentechschool.org/tags/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://opentechschool.org/learn/</loc>
   </url>
   
 </urlset>

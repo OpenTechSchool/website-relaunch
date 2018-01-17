@@ -1,14 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>OpenTechSchool – OpenTechSchool</title>
+    <title>Hands-on. Empowering. Peer-driven. on OpenTechSchool</title>
     <link>http://opentechschool.org/</link>
-    <description>Recent content on OpenTechSchool – OpenTechSchool</description>
+    <description>Recent content in Hands-on. Empowering. Peer-driven. on OpenTechSchool</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
 	<atom:link href="http://opentechschool.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>http://opentechschool.org/learn/resource1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://opentechschool.org/learn/resource1/</guid>
+      <description>Material 1</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://opentechschool.org/learn/resource2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://opentechschool.org/learn/resource2/</guid>
+      <description>Material 2</description>
+    </item>
+    
+    <item>
+      <title>About page</title>
+      <link>http://opentechschool.org/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://opentechschool.org/about/</guid>
+      <description>this is the about page</description>
+    </item>
     
   </channel>
 </rss>

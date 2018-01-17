@@ -15,3 +15,8 @@ This site is built using [Hugo](https://gohugo.io/), a static site generator. Af
 hugo
 hugo server --watch
 ```
+
+open `http://localhost:1313` 
+
+
+
