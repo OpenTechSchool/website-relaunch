@@ -7,9 +7,6 @@ contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
 
-[permalinks]
-	page = "/:title/"
-	about = "/:filename/"
 
 [params]
   email = ""
