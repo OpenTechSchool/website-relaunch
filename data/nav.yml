@@ -1,44 +1,39 @@
-navigation:
-  - title: "Learn"
-    url: "/learn"
-    # nav: learn
-    basic: true
-  - title: "Contribute"
-    url: "/contribute"
-    # nav: contribute
-    basic: true
-  - title: "Community"
-    url: "/community/"
-    nav: "community"
-    sub:
-      - title: "Chapters"
-        url: "/chapters/"
-      - title: "Projects"
-        url: "/projects/"
-      - title: "Our Stories"
-        url: "/stories/"
-  - title: "About"
-    url: "/about/"
-    # nav: "about"
-    sub:
-      - title: "Our history"
-        url: "/history/"
-      - title: "Projects"
-        url: "/projects/"
-      - title: "Where"
-        url: "/where/"
-      - title: "What drive us"
-        url: "/drive"
-      - title: "Contact"
-        url: "/contact"
-
-social:
-  - title: "Twitter"
-    icon: "twitter"
-    url: "https://twitter.com/OpenTechSchool"
-  - title: "Facebook"
-    icon: "facebook"
-    url: "https://www.facebook.com/OpenTechSchool/"
-  - title: "Donate"
-    icon: "heart"
-    url: "/foundation/donate"
+menu:
+  navigation:
+    - Name: "Learn"
+      URL: "/learn"
+    - Name: "Contribute"
+      URL: "/contribute"
+    - Name: "Community"
+      URL: "/community"
+      HasChildren: true
+      Children:
+        - Name: "Chapters"
+          URL: "/chapters"
+        - Name: "Projects"
+          URL: "/projects"
+        - Name: "Our Stories"
+          URL: "/stories"
+    - Name: "About"
+      URL: "/about"
+      sub:
+        - Name: "Our history"
+          URL: "/history"
+        - Name: "Projects"
+          URL: "/projects"
+        - Name: "Where"
+          URL: "/where/"
+        - Name: "What drive us"
+          URL: "/drive"
+        - Name: "Contact"
+          URL: "/contact"
+  social:
+    - Name: "Twitter"
+      icon: "twitter"
+      URL: "https://twitter.com/OpenTechSchool"
+    - Name: "Facebook"
+      icon: "facebook"
+      URL: "https://www.facebook.com/OpenTechSchool/"
+    - Name: "Donate"
+      icon: "heart"
+      URL: "/foundation/donate"

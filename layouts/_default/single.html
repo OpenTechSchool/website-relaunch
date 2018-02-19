@@ -9,12 +9,6 @@
 
 
     <div class="container">
-      {{ if .Param "nav" }}
-        <ul class="subnav row">
-          {{ partial "_render_nav.html" . }}
-        </ul>
-      {{ end }}
-
       <article>
         {{.Content}}
       </article>

@@ -1,18 +1,19 @@
-{{ range $item := .navigation }}
-  {{ if $item.sub }}
+{{ range $currentPage := .menu.navigation }}
+  {{ if .HasChildren }}
     <li class='dropdown'>
-      <a class='arrow'>{{$item.title}}</a>
+      <a class='arrow'>{{ .Name }}</a>
       <ul class='submenu'>
-        {{ range $subitem := $item.sub }}
+        {{ range .Children }}
           <li>
-            <a href="{{$subitem.url}}">{{$subitem.title}}</a>
+            <a href='{{ .URL }}'>{{ .Name }}</a>
           </li>
         {{ end }}
       </ul>
     </li>
   {{ else }}
     <li>
-      <a href="{{$item.url}}">{{$item.title}}</a>
+      <a href='{{ .URL }}'>{{ .Name }}</a>
     </li>
   {{ end }}
 {{ end }}
+

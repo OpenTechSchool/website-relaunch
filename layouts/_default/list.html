@@ -1,5 +1,22 @@
 {{ define "main" }}
 
-This is the list template
+  <div class="layout-page">
+    <header style="background-image: url(/img/backgrounds/{{.Param "background"}})">
+      <div class="container">
+        <h1>{{.Page.Title}}</h1>
+      </div>
+    </header>
+
+
+    <div class="container">
+      <ul>
+        {{ range .Data.Pages }}
+          <li>
+            {{.Content}}
+          </li>
+        {{ end }}
+    </ul>
+    </div>
+  </div>
 
 {{ end }}
