@@ -7,6 +7,7 @@ contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
 
+sectionPagesMenu = "navigation"
 
 [params]
   email = ""

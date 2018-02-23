@@ -1,4 +1,5 @@
-{{ range $currentPage := .menu.navigation }}
+{{ $currentPage := . }}
+{{ range .menu.navigation }}
   {{ if .HasChildren }}
     <li class='dropdown'>
       <a class='arrow'>{{ .Name }}</a>
