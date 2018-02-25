@@ -12,18 +12,16 @@
   "keywords": [],
   "scripts": {
     "clean": "rimraf public/{css/*,js/*,img/*}",
-    "autoprefixer": "postcss -u autoprefixer -r public/css/*",
-    "scss": "node-sass --output-style compressed -o public/css static/sass",
+    "postcss": "postcss static/css/main.css -u postcss-import postcss-url postcss-modules postcss-cssnext autoprefixer -c postcss.config.json -o public/css/main.css",
     "lint": "eslint static/js || true",
-    "lint-scss": "stylelint static/sass/*.scss --syntax scss || true",
     "uglify": "mkdirp public/js -p && uglifyjs static/js/*.js -m -o public/js/app.js && uglifyjs static/js/*.js -m -c -o public/js/app.min.js",
     "imagemin": "imagemin static/img/* -o public/img",
     "icons": "svgo -f static/img/icons -o public/img/icons && svg-sprite-generate -d public/img/icons -o public/img/icons/sprite.svg",
-    "build:css": "run-s lint-scss scss autoprefixer",
+    "build:css": "run-s postcss",
     "build:js": "run-s lint uglify",
     "build:img": "run-s imagemin icons",
     "build": "run-s build:*",
-    "watch:css": "onchange \"static/sass\" -- run-s build:css",
+    "watch:css": "onchange \"static/css\" -- run-s build:css",
     "watch:js": "onchange \"static/js\" -- run-s build:js",
     "watch:img": "onchange \"static/img\" -- run-s build:img",
     "watch": "run-p watch:*",
@@ -37,14 +35,22 @@
     "eslint-plugin-standard": "1.3.2",
     "imagemin-cli": "3.0.0",
     "mkdirp": "0.5.1",
-    "node-sass": "^3.13.1",
     "npm-run-all": "2.1.1",
     "onchange": "2.4.0",
     "postcss-cli": "2.5.2",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^11.1.0",
+    "postcss-modules": "^1.1.0",
+    "postcss-url": "^7.3.0",
     "rimraf": "2.5.4",
     "stylelint": "7.8.0",
     "svg-sprite-generator": "0.0.7",
     "svgo": "0.6.6",
     "uglify-js": "2.6.2"
-  }
+  },
+  "browsers": [
+    ">1%",
+    "last 4 versions",
+    "not ie <= 8"
+  ]
 }

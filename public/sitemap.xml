@@ -11,16 +11,13 @@
   </url>
   
   <url>
-    <loc>http://opentechschool.org/about/</loc>
-  </url>
-  
-  <url>
     <loc>http://opentechschool.org/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://opentechschool.org/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -29,7 +26,19 @@
   </url>
   
   <url>
+    <loc>http://opentechschool.org/about/</loc>
+  </url>
+  
+  <url>
+    <loc>http://opentechschool.org/contribute/</loc>
+  </url>
+  
+  <url>
     <loc>http://opentechschool.org/learn/</loc>
+  </url>
+  
+  <url>
+    <loc>http://opentechschool.org/community/</loc>
   </url>
   
 </urlset>

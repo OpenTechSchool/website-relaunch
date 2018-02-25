@@ -4,7 +4,6 @@
   <body class="{{if .Permalink}}page-{{.Permalink}}{{end}}{{if .Params.tags}}{{.Params.tags}}{{end}}">
     {{ partial "header.html" . }}
     
-    This is the baseOf file
     {{ block "main" . }}
 
     {{ end }}

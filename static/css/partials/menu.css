@@ -1,0 +1,176 @@
+.header {
+  height: 68px;
+  background: var(--brandBlue);
+}
+
+.nav {
+  padding: 20px 0;
+}
+
+.logo {
+  color: white;
+  font-family: var(--headerFontFamily);
+  font-size: 26px;
+  padding-left: 16px;
+}
+
+.nav-links {
+  margin-right: 7px;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.2s;
+  background-color: var(--brandLight);
+  overflow-y: hidden;
+  position: relative;
+  top: 12px;
+  width: 100%;
+}
+
+#shownav {
+  visibility: hidden;
+  position: absolute;
+  left: -1000px;
+  padding-right: 16px;
+}
+
+#shownav + label {
+  position: absolute;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  top: 26px;
+  cursor: pointer;
+}
+
+#shownav + label div {
+  position: absolute;
+  top: 10px;
+  height: 5px;
+  background-color: white;
+  width: 30px;
+  display: block;
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+
+#shownav + label div:nth-of-type(1) {
+  transform: translate3d(0, -10px, 0);
+}
+
+#shownav + label div:nth-of-type(3) {
+  transform: translate3d(0, 10px, 0);
+}
+
+#shownav:checked + label div:nth-of-type(1) {
+  transform: translate3d(0, 0, 0) rotate(45deg);
+}
+
+#shownav:checked + label div:nth-of-type(2) {
+  opacity: 0;
+}
+
+#shownav:checked + label div:nth-of-type(3) {
+  transform: translate3d(0, 0, 0) rotate(-45deg);
+}
+
+#shownav:checked ~ .nav-links {
+  max-height: 1000px;
+  height: 100vh;
+}
+
+.nav-items {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 74px;
+}
+
+.nav-items li {
+  padding-bottom: 43px;
+}
+
+.nav-items a {
+  color: white;
+  font-family: var(--paragraphFontFamily);
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.submenu {
+  display: none;
+}
+
+.nav-social {
+  background-color: var(--blueMiddle);
+  height: 100vh;
+  padding: 35px 40px;
+
+  li {
+    margin: 0 .25em;
+    border-top: none;
+  }
+
+  a {
+    border: 0;
+
+    &.ots-icon {
+      padding: 0px;
+    }
+  }
+}
+
+.social-title {
+  color: white;
+  text-align: center;
+  font-family: var(--headerFontFamily);
+  font-size: 24px;
+}
+
+.ots-icon {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  background: transparent url("../../img/ots_icons.png") no-repeat 0 0;
+
+  &.github {
+    background-position: 0 0;
+  }
+
+  &.twitter {
+    background-position: 0 -28px;
+  }
+
+  &.facebook {
+    background-position: 0 -56px;
+  }
+
+  &.github:hover,
+  &.github:focus {
+    background-position: 0 -84px;
+  }
+
+  &.twitter:hover,
+  &.twitter:focus {
+    background-position: 0 -112px;
+  }
+
+  &.facebook:hover,
+  &.facebook:focus {
+    background-position: 0 -140px;
+  }
+
+  &.discourse {
+    background-position: -28px 0;
+  }
+
+  &.discourse:hover,
+  &.discourse:focus {
+    background-position: -28px -83px;
+  }
+}
