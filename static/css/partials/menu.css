@@ -33,7 +33,7 @@
   padding-right: 16px;
 }
 
-#shownav + label {
+.menuButton {
   position: absolute;
   right: 20px;
   width: 30px;
@@ -42,7 +42,7 @@
   cursor: pointer;
 }
 
-#shownav + label div {
+.menuButton div {
   position: absolute;
   top: 10px;
   height: 5px;
@@ -53,33 +53,38 @@
   transition: all 0.2s ease-out;
 }
 
-#shownav + label div:nth-of-type(1) {
+.menuButton div:nth-of-type(1) {
   transform: translate3d(0, -10px, 0);
 }
 
-#shownav + label div:nth-of-type(3) {
+.menuButton div:nth-of-type(3) {
   transform: translate3d(0, 10px, 0);
 }
 
-#shownav:checked + label div:nth-of-type(1) {
+#shownav:checked ~ .header {
+  position: fixed;
+  width: 100%;
+}
+
+#shownav:checked ~ .header .menuButton div:nth-of-type(1) {
   transform: translate3d(0, 0, 0) rotate(45deg);
 }
 
-#shownav:checked + label div:nth-of-type(2) {
+#shownav:checked ~ .header .menuButton div:nth-of-type(2) {
   opacity: 0;
 }
 
-#shownav:checked + label div:nth-of-type(3) {
+#shownav:checked ~ .header .menuButton div:nth-of-type(3) {
   transform: translate3d(0, 0, 0) rotate(-45deg);
 }
 
-#shownav:checked ~ .nav-links {
+#shownav:checked ~ .header .nav-links {
   max-height: 1000px;
   height: 100vh;
 }
 
 .nav-items {
-  height: 75vh;
+  height: 69vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -98,6 +103,27 @@
   text-transform: uppercase;
 }
 
+.nav-items li:last-child {
+  /* 36px is 24px + 12px which is the icon width */
+  padding: 14px 36px 14px 24px;
+  background: var(--brandContrary);
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.nav-items li:last-child a {
+  font-size: 14px;
+}
+
+.nav-items li:last-child a:after {
+  content: url('../../img/svg/heart.svg');
+  color: white;
+  width: 12px; /* update the padding if you update this number */
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 2px;
+}
+
 .submenu {
   display: none;
 }
@@ -106,19 +132,6 @@
   background-color: var(--blueMiddle);
   height: 100vh;
   padding: 35px 40px;
-
-  li {
-    margin: 0 .25em;
-    border-top: none;
-  }
-
-  a {
-    border: 0;
-
-    &.ots-icon {
-      padding: 0px;
-    }
-  }
 }
 
 .social-title {
@@ -126,51 +139,117 @@
   text-align: center;
   font-family: var(--headerFontFamily);
   font-size: 24px;
+  margin-bottom: 35px;
 }
 
-.ots-icon {
-  width: 28px;
-  height: 28px;
-  padding: 0;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  display: block;
-  background: transparent url("../../img/ots_icons.png") no-repeat 0 0;
+.social-icons {
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0 auto;
+}
 
-  &.github {
-    background-position: 0 0;
+.social-icons a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.twitter {
+  background-image: url('../../img/svg/twitter.svg');
+}
+
+.facebook {
+  background-image: url('../../img/svg/facebook.svg');
+}
+
+.discourse {
+  background-image: url('../../img/svg/facebook.svg');
+}
+
+.github {
+  background-image: url('../../img/svg/github.svg');
+}
+
+@media (min-width: 768px) {
+  .menuButton,
+  .social-title {
+    display: none;
   }
 
-  &.twitter {
-    background-position: 0 -28px;
+  .header {
+    height: 110px;
+    transition: all 0.2s ease-out;
   }
 
-  &.facebook {
-    background-position: 0 -56px;
+  .logo {
+    line-height: 3.5em;
   }
 
-  &.github:hover,
-  &.github:focus {
-    background-position: 0 -84px;
+  .nav {
+    transition: padding-bottom .25s ease-in;
+    display: flex;
+    justify-content: space-between;
   }
 
-  &.twitter:hover,
-  &.twitter:focus {
-    background-position: 0 -112px;
+  .nav-links {
+    height: 40px;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    top: -14px;
+    overflow: visible;
   }
 
-  &.facebook:hover,
-  &.facebook:focus {
-    background-position: 0 -140px;
+  #shownav:checked ~ .header .nav-links {
+    height: auto;
+    display: flex;
+    flex-direction: column;
   }
 
-  &.discourse {
-    background-position: -28px 0;
+  .nav-items {
+    flex-direction: row;
+    height: auto;
+    padding-top: 0;
+    order: 2;
+    justify-content: space-between;
+    width: 70vh;
   }
 
-  &.discourse:hover,
-  &.discourse:focus {
-    background-position: -28px -83px;
+  .nav-items li {
+    padding-bottom: 0;
+    padding-right: 16px;
+  }
+
+  .nav-items a {
+    font-size: 16px;
+  }
+
+  .nav-social {
+    height: auto;
+    padding: 10px 0;
+    background: transparent;
+  }
+
+  .nav-items li:last-child {
+    padding: 8px 26px 8px 14px;
+  }
+
+  .social-icons {
+    justify-content: flex-end;
+    max-width: none;
+  }
+
+  .social-icons a {
+    padding: 0 16px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+  }
+
+  .social-icons a:last-child {
+    padding-right: 0;
   }
 }

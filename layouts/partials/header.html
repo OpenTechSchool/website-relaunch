@@ -1,9 +1,9 @@
+<input type="checkbox" id="shownav" />
 <header class="header">
   <nav class="nav">
     <a class="logo" href="{{.Site.BaseURL}}">OpenTechSchool</a>
 
-    <input type="checkbox" id="shownav" />
-    <label for="shownav">
+    <label for="shownav" class="menuButton">
       <div></div>
       <div></div>
       <div></div>
@@ -15,9 +15,9 @@
       </ul>
       <div class='nav-social'>
         <h3 class='social-title'>Connect</h3>
-        <ul>
+        <div class='social-icons'>
           {{ partial "_render_social_list.html" .Site.Data.nav }}
-        </ul>
+        </div>
       </div>
 
     </div>

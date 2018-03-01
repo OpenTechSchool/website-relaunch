@@ -31,3 +31,9 @@ img, object, embed {
 img {
   height: auto;
 }
+
+.test { color: red; }
+
+.no-scroll-y {
+  overflow: hidden;
+}

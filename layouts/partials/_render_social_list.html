@@ -1,3 +1,4 @@
-{{ range $currentPage := .menu.social }}
+{{ $currentPage := . }}
+{{ range .menu.social }}
   <a href='{{ .URL }}' class='{{ .icon }}' target='_blank' rel='noopener noreferrer'></a>
 {{ end }}
