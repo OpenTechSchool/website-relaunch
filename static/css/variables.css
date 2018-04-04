@@ -1,4 +1,4 @@
-@font-face{ 
+@font-face{
 	font-family: 'OpenSansExtraBold';
 	src: url('../fonts/opensans/opensans_extrabold_macroman/OpenSans-ExtraBold-webfont.eot');
 	src: url('../fonts/opensans/opensans_extrabold_macroman/OpenSans-ExtraBold-webfont.eot?iefix') format('eot'),
@@ -18,18 +18,18 @@
   --blueMiddle: #1F709E;
 
   /* Font stack */
+  --headerFontFamily: 'OpenSansExtraBold', 'Helvetica', 'Arial', sans-serif;
   --paragraphFontFamily: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   --paragraphFontSize: 20px;
   --lineHeight: 1.4;
-  --headerFontFamily: 'OpenSansExtraBold', 'Helvetica', 'Arial', sans-serif;
   --paragraphFont: 400 var(--paragraphFontSize) var(--paragraphFontFamily) var(--lineHeight);
   --headerFont: 700 var(--headerFontSize) var(--lineHeight);
 
 
   /* Typography */
   --fontSizeHead1: 38px;
-  --fontSizeHead2: 26px; 
-  
+  --fontSizeHead2: 26px;
+
   /* Breakpoints */
   @custom-media --smallScreen (max-width: 550px);
   @custom-media --smallToTablet (min-width: 768px);

@@ -13,11 +13,8 @@
       <ul class='nav-items'>
         {{ partial "_render_nav.html" .Site.Data.nav }}
       </ul>
-      <div class='nav-social'>
-        <h3 class='social-title'>Connect</h3>
-        <div class='social-icons'>
-          {{ partial "_render_social_list.html" .Site.Data.nav }}
-        </div>
+      {{ partial "_render_social_list.html" .Site.Data.nav }}
+      {{ partial "_render_copyright.html" }}
       </div>
 
     </div>

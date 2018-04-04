@@ -84,16 +84,14 @@
 }
 
 .nav-items {
-  height: 69vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 74px;
+  padding-top: 40px;
+  justify-content: space-around;
 }
 
-.nav-items li {
-  padding-bottom: 43px;
-}
 
 .nav-items a {
   color: white;
@@ -128,53 +126,23 @@
   display: none;
 }
 
-.nav-social {
+/* Social Menu */
+.header .nav-social {
   background-color: var(--blueMiddle);
-  height: 100vh;
-  padding: 35px 40px;
 }
 
-.social-title {
+.header .social-title {
   color: white;
-  text-align: center;
-  font-family: var(--headerFontFamily);
-  font-size: 24px;
-  margin-bottom: 35px;
 }
 
-.social-icons {
-  max-width: 300px;
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  margin: 0 auto;
-}
-
-.social-icons a {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-}
-
-.twitter {
-  background-image: url('../../img/svg/twitter.svg');
-}
-
-.facebook {
-  background-image: url('../../img/svg/facebook.svg');
-}
-
-.discourse {
-  background-image: url('../../img/svg/facebook.svg');
-}
-
-.github {
-  background-image: url('../../img/svg/github.svg');
+.header .copyright {
+  background-color: var(--blueMiddle);
+  padding: 15px 0 20px;
 }
 
 @media (min-width: 768px) {
   .menuButton,
-  .social-title {
+  .header .social-title {
     display: none;
   }
 
@@ -227,29 +195,33 @@
     font-size: 16px;
   }
 
-  .nav-social {
+  .nav-items li:last-child {
+    padding: 8px 26px 8px 14px;
+  }
+
+  .header .nav-social {
     height: auto;
     padding: 10px 0;
     background: transparent;
   }
 
-  .nav-items li:last-child {
-    padding: 8px 26px 8px 14px;
-  }
-
-  .social-icons {
+  .header .social-icons {
     justify-content: flex-end;
     max-width: none;
   }
 
-  .social-icons a {
+  .header .social-icons a {
     padding: 0 16px;
     width: 20px;
     height: 20px;
     background-repeat: no-repeat;
   }
 
-  .social-icons a:last-child {
+  .header .social-icons a:last-child {
     padding-right: 0;
+  }
+
+  .header .copyright {
+    display: none;
   }
 }

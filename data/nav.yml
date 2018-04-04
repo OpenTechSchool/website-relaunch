@@ -42,3 +42,9 @@ menu:
     - Name: "Github"
       icon: "github"
       URL: "https://github.com/OpenTechSchool"
+  footer:
+    - Name: 'test'
+      URL: 'https://whatever.com'
+    - Name: 'test_two'
+      URL: 'https://whatever.com'
+

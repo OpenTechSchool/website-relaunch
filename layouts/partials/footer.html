@@ -1,9 +1,8 @@
 <footer>
-  <div class="container-fluid">
-    <ul class="row">
-
-      <li class="col-xs-3">
-        <h3>Get involved</h3>
+  {{ partial "_render_social_list.html" .Site.Data.nav }}
+    <ul class='footer-items'>
+      <li>
+        <h3 class='title'>Get involved</h3>
         <ul>
           <li>
             <a href="#">Organize and event</a>
@@ -23,8 +22,8 @@
         </ul>
       </li>
 
-      <li class="col-xs-3">
-        <h3>Connect</h3>
+      <li>
+        <h3 class='title'>Connect</h3>
         <ul>
           <li>
             <a href="https://twitter.com/OpenTechSchool">Twitter</a>
@@ -49,8 +48,8 @@
           </li>
         </ul>
       </li>
-        <li class="col-xs-3">
-        <h3>Our Values</h3>
+        <li>
+        <h3 class='title'>Our Values</h3>
         <ul>
           <li>
             <a href="#">What drives us</a>
@@ -67,8 +66,8 @@
         </ul>
       </li>
 
-      <li class="col-xs-3">
-        <h3>About us</h3>
+      <li>
+        <h3 class='title'>About us</h3>
         <ul>
           <li>
             <a href="{{.Site.BaseURL}}press.html">Learn more</a>
@@ -101,25 +100,9 @@
            Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
         </small>
       </p>
-
-      <p>
-        © 2016 by
-        <a href="http://www.opentechschool.org/foundation/">
-          OpenTechSchool e.V.
-        </a>&nbsp;&nbsp;||&nbsp;&nbsp;
-        <a href="{{.Site.BaseURL}}contact.html">
-          Contact us
-        </a>&nbsp;&nbsp;||&nbsp;&nbsp;
-        <a href="{{.Site.BaseURL}}imprint.html">Impressum</a>
-      </p>
     </div>
-
-  </div>
+    {{ partial "_render_copyright.html" }}
 </footer>
 
 <!-- our external javascript scripts -->
-<script type="text/javascript" src="/assets/statics/polyfills/fetch.js"></script>
-<script type="text/javascript" src="/assets/statics/polyfills/template.js"></script>
-<script type="text/javascript" src="/assets/statics/polyfills/jsonp.js"></script>
-
-<script type="text/javascript" src="/scripts/ots-app.js"></script>
+<script type="text/javascript" src="/js/ots-app.js"></script>

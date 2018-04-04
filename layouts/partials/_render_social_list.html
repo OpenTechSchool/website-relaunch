@@ -1,4 +1,9 @@
 {{ $currentPage := . }}
-{{ range .menu.social }}
-  <a href='{{ .URL }}' class='{{ .icon }}' target='_blank' rel='noopener noreferrer'></a>
-{{ end }}
+<div class='nav-social'>
+  <h3 class='social-title'>Connect</h3>
+  <div class='social-icons'>
+		{{ range .menu.social }}
+		  <a href='{{ .URL }}' class='{{ .icon }}' target='_blank' rel='noopener noreferrer'></a>
+		{{ end }}
+  </div>
+</div>

@@ -3,11 +3,11 @@
   {{ partial "head.html" . }}
   <body class="{{if .Permalink}}page-{{.Permalink}}{{end}}{{if .Params.tags}}{{.Params.tags}}{{end}}">
     {{ partial "header.html" . }}
-    
+
     {{ block "main" . }}
 
     {{ end }}
 
-    {{ partial "footer.html" }}
+    {{ partial "footer.html" . }}
   </body>
 </html>
