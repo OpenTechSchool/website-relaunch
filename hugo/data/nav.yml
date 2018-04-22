@@ -1,0 +1,50 @@
+menu:
+  navigation:
+    - Name: "Learn"
+      URL: "/learn"
+    - Name: "Contribute"
+      URL: "/contribute"
+    - Name: "Community"
+      URL: "/community"
+      HasChildren: true
+      Children:
+        - Name: "Chapters"
+          URL: "/chapters"
+        - Name: "Projects"
+          URL: "/projects"
+        - Name: "Our Stories"
+          URL: "/stories"
+    - Name: "About"
+      URL: "/about"
+      sub:
+        - Name: "Our history"
+          URL: "/history"
+        - Name: "Projects"
+          URL: "/projects"
+        - Name: "Where"
+          URL: "/where/"
+        - Name: "What drive us"
+          URL: "/drive"
+        - Name: "Contact"
+          URL: "/contact"
+    - Name: "Donate"
+      URL: "/foundation/donate"
+  social:
+    - Name: "Twitter"
+      icon: "twitter"
+      URL: "https://twitter.com/OpenTechSchool"
+    - Name: "Facebook"
+      icon: "facebook"
+      URL: "https://www.facebook.com/OpenTechSchool/"
+    - Name: "OTS Forum"
+      icon: "discourse"
+      URL: "https://www.discourse/opentechschool.org"
+    - Name: "Github"
+      icon: "github"
+      URL: "https://github.com/OpenTechSchool"
+  footer:
+    - Name: 'test'
+      URL: 'https://whatever.com'
+    - Name: 'test_two'
+      URL: 'https://whatever.com'
+

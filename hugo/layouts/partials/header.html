@@ -1,0 +1,22 @@
+<input type="checkbox" id="shownav" />
+<header class="header">
+  <nav class="nav">
+    <a class="logo" href="{{.Site.BaseURL}}">OpenTechSchool</a>
+
+    <label for="shownav" class="menuButton">
+      <div></div>
+      <div></div>
+      <div></div>
+    </label>
+
+    <div class="nav-links">
+      <ul class='nav-items'>
+        {{ partial "_render_nav.html" .Site.Data.nav }}
+      </ul>
+      {{ partial "_render_social_list.html" .Site.Data.nav }}
+      {{ partial "_render_copyright.html" }}
+      </div>
+
+    </div>
+  </nav>
+</header>

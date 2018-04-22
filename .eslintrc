@@ -1,0 +1,16 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "extends": "airbnb-base",
+  "rules": {
+    "max-len": [2, 120, 2, {
+      "ignoreUrls": true,
+      "ignoreComments": false
+    }],
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true }],
+    "import/prefer-default-export": "off"
+  }
+}

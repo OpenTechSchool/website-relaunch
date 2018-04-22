@@ -1,0 +1,20 @@
+{{ $currentPage := . }}
+{{ range .menu.navigation }}
+  {{ if .HasChildren }}
+    <li class='dropdown'>
+      <a class='arrow'>{{ .Name }}</a>
+      <ul class='submenu'>
+        {{ range .Children }}
+          <li>
+            <a href='{{ .URL }}'>{{ .Name }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </li>
+  {{ else }}
+    <li>
+      <a href='{{ .URL }}'>{{ .Name }}</a>
+    </li>
+  {{ end }}
+{{ end }}
+

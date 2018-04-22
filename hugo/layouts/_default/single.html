@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+  <div class="layout-page">
+    <header style="background-image: url(/img/backgrounds/{{.Param "background"}})">
+      <div class="container">
+        <h1>{{.Page.Title}}</h1>
+      </div>
+    </header>
+
+
+    <div class="container">
+      <article>
+        {{.Content}}
+      </article>
+    </div>
+  </div>
+
+{{ end }}

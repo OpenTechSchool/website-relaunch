@@ -1,0 +1,226 @@
+.header {
+  height: 68px;
+  background: var(--brandBlue);
+}
+
+.nav {
+  padding: 20px 0;
+}
+
+.logo {
+  color: white;
+  font-family: var(--headerFontFamily);
+  font-size: 26px;
+  padding-left: 16px;
+}
+
+.nav-links {
+  margin-right: 7px;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.2s;
+  background-color: var(--brandLight);
+  overflow-y: hidden;
+  position: relative;
+  top: 12px;
+  width: 100%;
+}
+
+#shownav {
+  visibility: hidden;
+  position: absolute;
+  left: -1000px;
+  padding-right: 16px;
+}
+
+.menuButton {
+  position: absolute;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  top: 26px;
+  cursor: pointer;
+}
+
+.menuButton div {
+  position: absolute;
+  top: 10px;
+  height: 5px;
+  background-color: white;
+  width: 30px;
+  display: block;
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+
+.menuButton div:nth-of-type(1) {
+  transform: translate3d(0, -10px, 0);
+}
+
+.menuButton div:nth-of-type(3) {
+  transform: translate3d(0, 10px, 0);
+}
+
+#shownav:checked ~ .header {
+  position: fixed;
+  width: 100%;
+}
+
+#shownav:checked ~ .header .menuButton div:nth-of-type(1) {
+  transform: translate3d(0, 0, 0) rotate(45deg);
+}
+
+#shownav:checked ~ .header .menuButton div:nth-of-type(2) {
+  opacity: 0;
+}
+
+#shownav:checked ~ .header .menuButton div:nth-of-type(3) {
+  transform: translate3d(0, 0, 0) rotate(-45deg);
+}
+
+#shownav:checked ~ .header .nav-links {
+  max-height: 1000px;
+  height: 100vh;
+}
+
+.nav-items {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+  justify-content: space-around;
+}
+
+
+.nav-items a {
+  color: white;
+  font-family: var(--paragraphFontFamily);
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav-items li:last-child {
+  /* 36px is 24px + 12px which is the icon width */
+  padding: 14px 36px 14px 24px;
+  background: var(--brandContrary);
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.nav-items li:last-child a {
+  font-size: 14px;
+}
+
+.nav-items li:last-child a:after {
+  content: url('../../img/svg/heart.svg');
+  color: white;
+  width: 12px; /* update the padding if you update this number */
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 2px;
+}
+
+.submenu {
+  display: none;
+}
+
+/* Social Menu */
+.header .nav-social {
+  background-color: var(--blueMiddle);
+}
+
+.header .social-title {
+  color: white;
+}
+
+.header .copyright {
+  background-color: var(--blueMiddle);
+  padding: 15px 0 20px;
+}
+
+@media (min-width: 768px) {
+  .menuButton,
+  .header .social-title {
+    display: none;
+  }
+
+  .header {
+    height: 110px;
+    transition: all 0.2s ease-out;
+  }
+
+  .logo {
+    line-height: 3.5em;
+  }
+
+  .nav {
+    transition: padding-bottom .25s ease-in;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    height: 40px;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    top: -14px;
+    overflow: visible;
+  }
+
+  #shownav:checked ~ .header .nav-links {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-items {
+    flex-direction: row;
+    height: auto;
+    padding-top: 0;
+    order: 2;
+    justify-content: space-between;
+  }
+
+  .nav-items li {
+    padding-bottom: 0;
+    padding-right: 16px;
+  }
+
+  .nav-items a {
+    font-size: 16px;
+  }
+
+  .nav-items li:last-child {
+    padding: 8px 26px 8px 14px;
+  }
+
+  .header .nav-social {
+    height: auto;
+    padding: 10px 0;
+    background: transparent;
+  }
+
+  .header .social-icons {
+    justify-content: flex-end;
+    max-width: none;
+  }
+
+  .header .social-icons a {
+    padding: 0 16px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+  }
+
+  .header .social-icons a:last-child {
+    padding-right: 0;
+  }
+
+  .header .copyright {
+    display: none;
+  }
+}

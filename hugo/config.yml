@@ -1,0 +1,17 @@
+---
+# Site
+baseurl: "https://blaupause.felics.me"
+title: "Blaupause"
+enableRobotsTXT: true
+googleAnalytics: ""
+# Content
+languageCode: "en-us"
+defaultContentLanguage: "en"
+# Formats
+metaDataFormat: "yaml"
+# -----------------------------
+# DO NOT CHANGE BELOW THIS LINE
+# -----------------------------
+disableLiveReload: true
+watch: false
+---

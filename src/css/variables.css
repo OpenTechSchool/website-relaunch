@@ -1,0 +1,41 @@
+@font-face{
+	font-family: 'OpenSansExtraBold';
+	src: url('../fonts/opensans/opensans_extrabold_macroman/OpenSans-ExtraBold-webfont.eot');
+	src: url('../fonts/opensans/opensans_extrabold_macroman/OpenSans-ExtraBold-webfont.eot?iefix') format('eot'),
+	     url('../fonts/opensans/opensans_extrabold_macroman/OpenSans-ExtraBold-webfont.woff') format('woff'),
+	     url('../fonts/opensans/opensans_extrabold_macroman/OpenSans-ExtraBold-webfont.ttf') format('truetype'),
+	     url('../fonts/opensans/opensans_extrabold_macroman/OpenSans-ExtraBold-webfont.svg#webfont') format('svg');
+}
+
+:root {
+  /* Colors */
+  --brandBlue: #085886;
+  --brandLight: #2D9CDB;
+  --brandContrary: #FF3877;
+  --fontColor: #4F4F4F;
+  --background: #FAFAFA;
+  --blueLink: #9DD3F2;
+  --blueMiddle: #1F709E;
+
+  /* Font stack */
+  --headerFontFamily: 'OpenSansExtraBold', 'Helvetica', 'Arial', sans-serif;
+  --paragraphFontFamily: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  --paragraphFontSize: 20px;
+  --lineHeight: 1.4;
+  --paragraphFont: 400 var(--paragraphFontSize) var(--paragraphFontFamily) var(--lineHeight);
+  --headerFont: 700 var(--headerFontSize) var(--lineHeight);
+
+
+  /* Typography */
+  --fontSizeHead1: 38px;
+  --fontSizeHead2: 26px;
+
+  /* Breakpoints */
+  @custom-media --smallScreen (max-width: 550px);
+  @custom-media --smallToTablet (min-width: 768px);
+  @custom-media --tabletToDesktop (min-width: 990px);
+  @custom-media --desktopToBigScreen (min-width: 1200px);
+
+  /* Layout */
+  --containerExternalPadding: 40px 36px;
+}

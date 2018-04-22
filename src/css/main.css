@@ -1,0 +1,41 @@
+@import "reset.css";
+@import "variables.css";
+@import "typography.css";
+@import "layout.css";
+
+/* common */
+@import "partials/menu.css";
+@import "partials/footer.css";
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: red;
+
+  /*
+    force scroll bar on windows
+    (prevents that the page jumps around when content is not longer than the viewport)
+  */
+  overflow-y: scroll;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, object, embed {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+.test { color: red; }
+
+.no-scroll-y {
+  overflow: hidden;
+}
