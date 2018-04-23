@@ -1,4 +1,6 @@
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 
 const env = process.env.NODE_ENV;
 
@@ -20,9 +22,17 @@ module.exports = {
         exclude: /(node_modules)/,
         test: /\.js?$/,
         loader: 'babel-loader',
-      },
+      }
     ],
   },
+  plugins: [
+    new CopyWebpackPlugin([
+      {
+        from: 'src/fonts',
+        to: path.resolve(__dirname, 'public/static/fonts'),
+      }
+    ])
+  ],
   devtool: !optimizeBuild && ' cheap-module-eval-source-map ',
   target: 'web',
   stats: 'normal',

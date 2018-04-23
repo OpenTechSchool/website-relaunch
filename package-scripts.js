@@ -20,11 +20,11 @@ const pub = (script, description) => ({
 const abs = to => join(__dirname, to);
 const rel = to => join(process.cwd(), to);
 
-const cssTasks = (src) => {
+const cssTasks = (src, dest) => {
   const getTask = (isProd) => {
     const plugins = 'postcss-import autoprefixer';
     const prodPlugins = `${plugins} cssnano`;
-    return `postcss ${esc(join(src, 'main.css'))} -u ${isProd ? prodPlugins : plugins} ${isProd ? '--no-map' : ''} -c postcss.config.json -o public/static/css/main.css`;
+    return `postcss ${esc(join(src, 'main.css'))} -u ${isProd ? prodPlugins : plugins} ${isProd ? '--no-map' : ''} -c postcss.config.json -o ${esc(join(dest, 'main.css'))}`;
   };
 
   return {

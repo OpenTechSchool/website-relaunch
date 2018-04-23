@@ -1,7 +1,8 @@
 ---
 # Site
-baseurl: "https://blaupause.felics.me"
-title: "Blaupause"
+baseURL: "http://opentechschool.org/"
+languageCode: "en-us"
+title: "OpenTechSchool"
 enableRobotsTXT: true
 googleAnalytics: ""
 # Content
@@ -9,6 +10,12 @@ languageCode: "en-us"
 defaultContentLanguage: "en"
 # Formats
 metaDataFormat: "yaml"
+
+sectionPagesMenu: "navigation"
+
+contentdir: "content"
+layoutdir: "layouts"
+publishdir: "public"
 # -----------------------------
 # DO NOT CHANGE BELOW THIS LINE
 # -----------------------------

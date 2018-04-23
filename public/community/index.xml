@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ots community on Blaupause</title>
+    <title>ots community on OpenTechSchool</title>
     <link>http://localhost:3000/community/</link>
-    <description>Recent content in ots community on Blaupause</description>
+    <description>Recent content in ots community on OpenTechSchool</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
