@@ -13,7 +13,8 @@ footer {
   font-style: 400;
   font-size: 10px;
   text-align: center;
-  margin: 35px 0 20px;
+  margin-top: 35px;
+  padding-bottom: 20px;
 }
 
 .copyright a {
@@ -50,20 +51,9 @@ footer {
   height: 30px;
 }
 
-.twitter {
-  background-image: url('../../img/svg/twitter.svg');
-}
-
-.facebook {
-  background-image: url('../../img/svg/facebook.svg');
-}
-
-.discourse {
-  background-image: url('../../img/svg/facebook.svg');
-}
-
-.github {
-  background-image: url('../../img/svg/github.svg');
+.social-icons-svg {
+  width: inherit;
+  height: inherit;
 }
 
 @media (min-width: 768px) {

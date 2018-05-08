@@ -11,6 +11,12 @@
         {{ end }}
       </ul>
     </li>
+  {{ else if .icon }}
+    <li>
+      <a href='{{ .URL }}' class="icon" target='_blank' rel='noopener noreferrer'>
+        {{ .Name }} {{ partial "media/svg" (dict "id" .icon "class" "heart-icon") }}
+      </a>
+    </li>
   {{ else }}
     <li>
       <a href='{{ .URL }}'>{{ .Name }}</a>

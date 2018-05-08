@@ -4,7 +4,7 @@
   <div class='social-icons'>
 		{{ range .menu.social }}
 		  <a href='{{ .URL }}' class="icon" target='_blank' rel='noopener noreferrer'>
-		  	{{ partial "media/svg" (dict "id" .icon "class" "social-icons-svg") }}
+		  	{{ partial "media/svg" (dict "id" .iconRevert "class" "social-icons-svg") }}
 		  </a>
 
 		{{ end }}

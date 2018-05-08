@@ -29,18 +29,23 @@ menu:
           URL: "/contact"
     - Name: "Donate"
       URL: "/foundation/donate"
+      icon: "heart"
   social:
     - Name: "Twitter"
       icon: "twitter"
+      iconRevert: "twitter_onBlue"
       URL: "https://twitter.com/OpenTechSchool"
     - Name: "Facebook"
       icon: "facebook"
+      iconRevert: "facebook_onBlue"
       URL: "https://www.facebook.com/OpenTechSchool/"
     - Name: "OTS Forum"
       icon: "discourse"
+      iconRevert: "discourse_onBlue"
       URL: "https://www.discourse/opentechschool.org"
     - Name: "Github"
       icon: "github"
+      iconRevert: "github_onBlue"
       URL: "https://github.com/OpenTechSchool"
   footer:
     - Name: 'test'

@@ -84,7 +84,7 @@
 }
 
 .nav-items {
-  height: 60vh;
+  height: 65vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -102,8 +102,7 @@
 }
 
 .nav-items li:last-child {
-  /* 36px is 24px + 12px which is the icon width */
-  padding: 14px 36px 14px 24px;
+  padding: 14px 26px 14px 24px;
   background: var(--brandContrary);
   border: 2px solid white;
   border-radius: 10px;
@@ -138,6 +137,15 @@
 .header .copyright {
   background-color: var(--blueMiddle);
   padding: 15px 0 20px;
+  margin-top: 0;
+}
+
+.heart-icon {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  margin-left: 7px;
+  top: 2px;
 }
 
 @media (min-width: 768px) {
@@ -195,7 +203,7 @@
   }
 
   .nav-items li:last-child {
-    padding: 8px 26px 8px 14px;
+    padding: 8px 14px;
   }
 
   .header .nav-social {
