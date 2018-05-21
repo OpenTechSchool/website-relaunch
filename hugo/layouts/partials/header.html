@@ -1,22 +1,23 @@
 <input type="checkbox" id="shownav" />
 <header class="header">
+  <a class="logo" href="{{.Site.BaseURL}}">OpenTechSchool</a>
+
+  <label for="shownav" class="menuButton">
+    <div></div>
+    <div></div>
+    <div></div>
+  </label>
+
   <nav class="nav">
-    <a class="logo" href="{{.Site.BaseURL}}">OpenTechSchool</a>
-
-    <label for="shownav" class="menuButton">
-      <div></div>
-      <div></div>
-      <div></div>
-    </label>
-
     <div class="nav-links">
+      <span class='tablet'>{{ partial "_render_social_list.html" .Site.Data.nav }}</span>
       <ul class='nav-items'>
         {{ partial "_render_nav.html" .Site.Data.nav }}
       </ul>
-      {{ partial "_render_social_list.html" .Site.Data.nav }}
-      {{ partial "_render_copyright.html" }}
-      </div>
-
     </div>
   </nav>
+  <div class='header-footer'>
+    <span class='mobile'>{{ partial "_render_social_list.html" .Site.Data.nav }}</span>
+    {{ partial "_render_copyright.html" }}
+  </div>
 </header>

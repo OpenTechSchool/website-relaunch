@@ -27,16 +27,62 @@
   <div class="page">
     <input type="checkbox" id="shownav" />
 <header class="header">
+  <a class="logo" href="http://localhost:3000">OpenTechSchool</a>
+
+  <label for="shownav" class="menuButton">
+    <div></div>
+    <div></div>
+    <div></div>
+  </label>
+
   <nav class="nav">
-    <a class="logo" href="http://localhost:3000">OpenTechSchool</a>
-
-    <label for="shownav" class="menuButton">
-      <div></div>
-      <div></div>
-      <div></div>
-    </label>
-
     <div class="nav-links">
+      <span class='tablet'>
+<div class='nav-social'>
+  <h3 class='social-title'>Connect</h3>
+  <div class='social-icons'>
+		
+		  <a href='https://twitter.com/OpenTechSchool' class="icon" target='_blank' rel='noopener noreferrer'>
+		  	
+<svg class="social-icons-svg">
+  <use xlink:href="/static/svg/sprite.symbol.svg#twitter" />
+</svg>
+
+		  </a>
+
+		
+		  <a href='https://www.facebook.com/OpenTechSchool/' class="icon" target='_blank' rel='noopener noreferrer'>
+		  	
+<svg class="social-icons-svg">
+  <use xlink:href="/static/svg/sprite.symbol.svg#facebook" />
+</svg>
+
+		  </a>
+
+		
+		  <a href='https://www.discourse/opentechschool.org' class="icon" target='_blank' rel='noopener noreferrer'>
+		  	
+<svg class="social-icons-svg">
+  <use xlink:href="/static/svg/sprite.symbol.svg#discourse" />
+</svg>
+
+		  </a>
+
+		
+		  <a href='https://github.com/OpenTechSchool' class="icon" target='_blank' rel='noopener noreferrer'>
+		  	
+<svg class="social-icons-svg">
+  <use xlink:href="/static/svg/sprite.symbol.svg#github" />
+</svg>
+
+		  </a>
+
+		
+  </div>
+</div>
+
+
+</span>
       <ul class='nav-items'>
         
 
@@ -94,7 +140,10 @@
 
 
       </ul>
-      
+    </div>
+  </nav>
+  <div class='header-footer'>
+    <span class='mobile'>
 <div class='nav-social'>
   <h3 class='social-title'>Connect</h3>
   <div class='social-icons'>
@@ -139,20 +188,20 @@
 </div>
 
 
-
-      <div class='copyright'>
+</span>
+    <div class='copyright'>
   <p>
     © 2018 by
     <a href="http://www.opentechschool.org/foundation/">
       OpenTechSchool e.V.
     </a>
-    &nbsp;&nbsp;||&nbsp;&nbsp;
+    <span class='divider'>&nbsp;&nbsp;||&nbsp;&nbsp;</span>
+  </p>
+  <p>
     designed by
     <a href="http://www.opentechschool.org">
       Our designer
     </a>
-  </p>
-  <p>
     &nbsp;&nbsp;||&nbsp;&nbsp;
     <a href="contact.html">
       Contact us
@@ -162,10 +211,7 @@
   </p>
 </div>
 
-      </div>
-
-    </div>
-  </nav>
+  </div>
 </header>
 
 
@@ -247,7 +293,7 @@
 
     <ul class='footer-items'>
       <li>
-        <h3 class='title'>Get involved</h3>
+        <h4 class='title'>Get involved</h4>
         <ul>
           <li>
             <a href="#">Organize and event</a>
@@ -268,7 +314,7 @@
       </li>
 
       <li>
-        <h3 class='title'>Connect</h3>
+        <h4 class='title'>Connect</h4>
         <ul>
           <li>
             <a href="https://twitter.com/OpenTechSchool">Twitter</a>
@@ -294,7 +340,7 @@
         </ul>
       </li>
         <li>
-        <h3 class='title'>Our Values</h3>
+        <h4 class='title'>Our Values</h4>
         <ul>
           <li>
             <a href="#">What drives us</a>
@@ -312,7 +358,7 @@
       </li>
 
       <li>
-        <h3 class='title'>About us</h3>
+        <h4 class='title'>About us</h4>
         <ul>
           <li>
             <a href="http://localhost:3000press.html">Learn more</a>
@@ -350,13 +396,13 @@
     <a href="http://www.opentechschool.org/foundation/">
       OpenTechSchool e.V.
     </a>
-    &nbsp;&nbsp;||&nbsp;&nbsp;
+    <span class='divider'>&nbsp;&nbsp;||&nbsp;&nbsp;</span>
+  </p>
+  <p>
     designed by
     <a href="http://www.opentechschool.org">
       Our designer
     </a>
-  </p>
-  <p>
     &nbsp;&nbsp;||&nbsp;&nbsp;
     <a href="contact.html">
       Contact us

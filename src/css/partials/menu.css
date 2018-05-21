@@ -1,29 +1,33 @@
+.header-footer,
+.tablet,
+.submenu {
+  display: none;
+}
+
 .header {
-  height: 68px;
   background: var(--brandBlue);
 }
 
 .nav {
-  padding: 20px 0;
+  padding-top: 10px;
+  height: 100%;
 }
 
 .logo {
+  display: inline-block;
   color: white;
   font-family: var(--headerFontFamily);
   font-size: 26px;
   padding-left: 16px;
+  padding-top: 20px;
 }
 
 .nav-links {
-  margin-right: 7px;
   overflow: hidden;
   max-height: 0;
   transition: all 0.2s;
   background-color: var(--brandLight);
   overflow-y: hidden;
-  position: relative;
-  top: 12px;
-  width: 100%;
 }
 
 #shownav {
@@ -64,6 +68,7 @@
 #shownav:checked ~ .header {
   position: fixed;
   width: 100%;
+  height: 100vh;
 }
 
 #shownav:checked ~ .header .menuButton div:nth-of-type(1) {
@@ -80,15 +85,15 @@
 
 #shownav:checked ~ .header .nav-links {
   max-height: 1000px;
-  height: 100vh;
+  height: 100%;
 }
 
 .nav-items {
-  height: 65vh;
+  height: 58vh;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 40px;
+  padding: 20px 0;
   justify-content: space-around;
 }
 
@@ -99,6 +104,12 @@
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.nav-items a:hover {
+  opacity: .6;
 }
 
 .nav-items li:last-child {
@@ -121,8 +132,11 @@
   margin-top: 2px;
 }
 
-.submenu {
-  display: none;
+#shownav:checked ~ .header .header-footer {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 /* Social Menu */
@@ -137,7 +151,7 @@
 .header .copyright {
   background-color: var(--blueMiddle);
   padding: 15px 0 20px;
-  margin-top: 0;
+  margin-top: -1px;
 }
 
 .heart-icon {
@@ -150,20 +164,30 @@
 
 @media (min-width: 768px) {
   .menuButton,
-  .header .social-title {
+  .header .social-title,
+  .mobile {
     display: none;
+  }
+
+  .tablet {
+    display: inline;
   }
 
   .header {
     height: 110px;
     transition: all 0.2s ease-out;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .logo {
     line-height: 3.5em;
+    padding-left: 0;
   }
 
   .nav {
+    height: auto;
     transition: padding-bottom .25s ease-in;
     display: flex;
     justify-content: space-between;
@@ -175,12 +199,8 @@
     width: auto;
     height: auto;
     max-height: 100%;
-    top: -14px;
+    top: -10px;
     overflow: visible;
-  }
-
-  #shownav:checked ~ .header .nav-links {
-    height: auto;
     display: flex;
     flex-direction: column;
   }
@@ -207,8 +227,7 @@
   }
 
   .header .nav-social {
-    height: auto;
-    padding: 10px 0;
+    padding: 0 0 15px;
     background: transparent;
   }
 
@@ -226,6 +245,7 @@
 
   .header .social-icons a:last-child {
     padding-right: 0;
+    padding-left: 0;
   }
 
   .header .copyright {

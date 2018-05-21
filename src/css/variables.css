@@ -17,18 +17,20 @@
   --blueLink: #9DD3F2;
   --blueMiddle: #1F709E;
 
+  /* Typography */
+  --fontSizeHead1: 38px;
+  --fontSizeHead2: 26px;
+  --fontSizeHead3: 24px;
+  --fontSizeHead4: 20px;
+
   /* Font stack */
   --headerFontFamily: 'OpenSansExtraBold', 'Helvetica', 'Arial', sans-serif;
   --paragraphFontFamily: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   --paragraphFontSize: 20px;
   --lineHeight: 1.4;
   --paragraphFont: 400 var(--paragraphFontSize) var(--paragraphFontFamily) var(--lineHeight);
-  --headerFont: 700 var(--headerFontSize) var(--lineHeight);
+  --headerFont: 700 var(--fontSizeHead1) var(--headerFontFamily) var(--lineHeight);
 
-
-  /* Typography */
-  --fontSizeHead1: 38px;
-  --fontSizeHead2: 26px;
 
   /* Breakpoints */
   @custom-media --smallScreen (max-width: 550px);

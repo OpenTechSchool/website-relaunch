@@ -1,11 +1,12 @@
 html,
 body {
-  font: var(--paragraphFont);
+  font-family: var(--paragraphFontFamily);
   line-height: 1.4;
   color: var(--fontColor);
 }
 
 a {
+  font-family: var(--paragraphFontFamily);
   color: var(--brandLight);
   font-weight: 500;
   text-decoration: none;
@@ -50,4 +51,8 @@ p {
 b,
 strong {
   font-weight: 500;
+}
+
+small {
+  font-size: 10px;
 }
